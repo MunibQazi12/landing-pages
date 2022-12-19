@@ -1,0 +1,69 @@
+.font-inter {
+	font-family: 'Inter', sans-serif;
+}
+
+.banner-bg {
+	background-color: #5423e7;
+}
+.text-primary {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.text-secondry {
+	color: #121217;
+}
+
+.text-blue-violet {
+	color: #7047eb;
+}
+
+.text-25 {
+	font-size: 25px;
+}
+
+.img-banner-bg {
+	background-image: url(../images/banner-bg.jpg);
+	background-position-x: 700px;
+	background-position-y: 0px; 
+}
+
+.accordion1 {
+  cursor: pointer;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* Change color of the heading and icon (on hover and click) */
+
+
+/* Add "plus" sign (+) after Accordion */
+
+
+/* Add "minus" sign (-) after Accordion (when accordion is active) */
+
+
+/* Style the accordion panel */
+.accordion-panel {
+	color: #6c6c89;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1023px) {
+	.img-banner-bg {
+		background-position-x: 550px;
+	}
+}
