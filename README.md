@@ -1,4 +1,4 @@
-# landing-pages
+# Landing Pages
 This repository has different landing pages built with different technologies for the different services. These landing pages are completely responsive for all devices (desktop, tablet, mobile) and compatible with all browsers.
 
 # Point of Sale SaaS Landing Page
