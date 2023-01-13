@@ -136,6 +136,7 @@
 	line-height: 22px;
 }
 
+/* Help Section Starts */
 .help-you-learn {
 	max-width: 980px;
 	padding-bottom: 83px;
@@ -267,6 +268,8 @@
     width: 200px;
     margin-left: -30px;
 }
+
+/* Help Section Ends */
 
 .spend-money {
 	background-color: #F5FAFF;
