@@ -1,0 +1,966 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+@font-face {
+	font-family: "Frightmare";
+	src: url("../fonts/Frightmare.otf") format("opentype"),
+	url("../fonts/Frightmare.ttf") format("ttf");
+}
+
+.banner-section {
+	background-image: url('../images/banner-haunted.png');
+	background-size: cover;
+}
+
+.banner-section .navbar {
+	margin-top: 63px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.banner-section .navbar .navbar-nav {
+	margin-left: auto;
+}
+
+.nav-btn button {
+	background-color: transparent;
+	border: 1px solid #fff;
+	height: 50px;
+	width: 170px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+
+.nav-btn button:hover {
+	background-color: #9E9171;
+	opacity: 0.8;
+	-o-transition: background-color 0.3s;
+	transition: background-color 0.3s;
+  	-webkit-transition: background-color 0.3s;
+
+}
+
+.banner-section .nav-item .header-social-icons a {
+	display: inline-block;
+	margin: 0 13px;
+}
+
+.banner-section .nav-item a {
+	font-size: 12px;
+	line-height: 15px;	
+	margin: 0 10px;
+}
+
+.banner-section .banner-section-btn button {
+	width: 200px;
+	height: 49px;
+	border: none;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.banner-section .banner-section-btn button:hover {
+	opacity: 0.8;
+	-o-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+  	-webkit-transition: opacity 0.3s;
+}
+
+
+.banner-section .banner-section-btn .connect-wallet {
+	background-color: #000;
+}
+
+.banner-section .banner-section-btn .join-dashboard {
+	background-color: #9E9171;
+}
+
+.banner-section .banner-section-content .banner-title {
+	font-size: 80px;
+	line-height: 100%;
+	color: #9E9171;
+	font-family: 'Frightmare', sans-serif;
+}
+
+.banner-section .banner-section-content .launch-time {	
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 15px;
+}
+
+.banner-section .banner-section-content .launch-time .launch-time-h {
+	width: 65px;
+}
+
+.banner-section .banner-section-content .launch-time .launch-time-h {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 160%;
+}
+
+.banner-section .banner-section-content .launch-time .time-log {
+	text-align: center;
+	width: 50px;
+	margin: 0 22px;
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 500;
+}
+
+.banner-section .banner-section-content .launch-time .time-log .time-numeric {
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 160%;
+}
+
+.banner-section .banner-section-content .banner-section-btn {
+	margin-top: 32px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.banner-section .banner-section-content .banner-section-btn button {
+	margin: 0 15px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.banner-section .banner-section-content {
+	margin-top: 160px;
+	padding-bottom: 220px;
+}
+
+.banner-section .white-creation {
+	bottom: -170px;
+	right: 100px;
+	z-index: 999;
+}
+
+.banner-section .logo-desktop {
+	display: block;
+}
+
+
+.banner-section .logo-mobile {
+	display: none;
+}
+
+.haunted-section-body .haunted-section-scroll-images {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin-top: 81px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1440px;
+}
+
+.haunted-section-body .haunted-section-scroll-images img {
+	width: 200px;
+}
+
+.haunted-section-body .haunted-section-scroll-images .img-haunted {
+	width: 16.667%;
+	height: 266px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.haunted-section-body .haunted-section-scroll-images .img-haunted.img14,
+.haunted-section-body .haunted-section-scroll-images .img-haunted.img13 {
+	width: 8.8%;
+	height: 276px;
+}
+
+.haunted-section-body .haunted-section-scroll-images .img-haunted.img14 {
+	background-image: url('../images/image-14.png');
+}
+
+.haunted-section-body .haunted-section-scroll-images .img-haunted.img13 {
+	background-image: url('../images/image-13.png');
+}
+
+.haunted-section-body .haunted-section-scroll-images .img-haunted.img12 {
+	background-image: url('../images/image-12.png');
+}
+
+.haunted-section-body .haunted-section-scroll-images .img-haunted.img11 {
+	background-image: url('../images/image-11.png');
+}
+
+.haunted-section-body .haunted-section-scroll-images .img-haunted.img10 {
+	background-image: url('../images/image-10.png');
+}
+
+.haunted-section-body .haunted-section-scroll-images .img-haunted.img9 {
+	background-image: url('../images/image-9.png');
+}
+
+.haunted-section-body .haunted-section-scroll-images .img-haunted.img8 {
+	background-image: url('../images/image-8.png');
+}
+
+.roadmap-section .road-t,
+.haunted-section-body .huanted-t,
+.faq-section .faq-title {
+	font-family: 'Frightmare', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100px;
+	line-height: 120%;
+	text-transform: uppercase;
+	color: #000000;
+	margin-top: 120px;
+}
+
+.haunted-section-body .haunted-para {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 240%;
+	color: #9E9171;
+}
+
+.haunted-section-body {
+	background-color: #f1ecdf;
+	padding-top: 120px;
+	position: relative;
+}
+
+.roadmap-section .jul-section {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin-bottom: 80px;
+}
+
+.roadmap-section .jul-section p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 200%;
+	color: #000000;
+	margin-top: 40px;
+}
+
+.roadmap-section .july-aug-section .jul-section p {
+	margin-left: 40px;
+}
+
+.roadmap-section .oct-nov-section .jul-section p {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.team-paragraph {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 240%;
+	color: #9E9171;
+	max-width: 965px;
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.team-items {
+	margin-top: 48px;
+}
+
+.team-items h4 {
+	font-family: 'Frightmare', sans-serif;
+	font-size: 40px;
+	line-height: 100%;
+	text-transform: uppercase;
+	color: #9E9171;
+	padding-left: 10px;
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+
+.team-items p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 240%;
+	color: #000000;
+	padding-left: 10px;
+	margin-bottom: 0;
+}
+
+.team-items img {
+	width: 100%;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.team-items img:hover {
+	-webkit-transform: scale(1.111);
+	-ms-transform: scale(1.111);
+	transform: scale(1.111);
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+footer {
+	background-color: #f1ecdf;
+}
+
+footer .footer-content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	height: 160px;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+footer .footer-content ul {
+	list-style: none;
+	padding-left: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	margin-left: auto;
+	margin-bottom: 0;
+}
+
+footer .footer-content ul li {
+	margin: 0 10px;
+}
+
+footer .footer-content ul li a {
+	font-size: 14px;
+	line-height: 17px;
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer .footer-content ul li .header-social-icons a {
+	margin: 0 10px;
+}
+
+footer .nav-btn button {
+	max-width: 200px;
+	border: 1px solid #000;
+} 
+
+footer .footer-content .footer-text {
+	display: none;
+}
+
+.faq-section .faq-plain-t {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 240%;
+	color: #9E9171;
+	margin-bottom: 40px;
+}
+
+
+.cardss {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.cardss .card-header {
+	background-color: transparent; 
+	padding-left: 0;
+	border-bottom: none;
+	padding-right: 0;
+}
+
+.cardss .card-header h2 button {
+	padding-left: 0;
+	color: #000;
+	font-size: 16px;
+	line-height: 160%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding-right: 0;
+}
+
+.cardss .card-header h2 button img {
+	-webkit-transform: rotate(180deg);
+	    -ms-transform: rotate(180deg);
+	        transform: rotate(180deg);
+}
+
+.cardss .card-header h2 button.collapsed img {
+	-webkit-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	        transform: rotate(0deg);
+}
+
+.cardss .card-header h2 button:focus,
+.cardss .card-header h2 button:active {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.cardss .collapse .card-body {
+	padding-left: 0;
+}
+
+.faq-section {
+	padding-bottom: 100px;
+	position: relative;
+}
+
+.faq-section .accordion {
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.cardss .card-header h2 button {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.cardss .collapse {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 240%;
+	color: #9E9171;
+}
+
+.faq-img {
+	margin-top: -100px;
+}
+
+.team-items .col-md-3 {
+	padding: 0;
+}
+
+.web-top {
+	position: absolute;
+}
+
+.web-mid {
+	position: absolute;
+	right: 0;
+	top: -100px;
+}
+
+.roadmap-second-section {
+	position: relative;
+}
+
+.web-bottom {
+	position: absolute;
+	top: -150px;
+}
+
+.banner-section .navbar.newClass {
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin-top: 0;
+	width: 100%;
+	top: 0;
+	background-color: #9E9171;
+	z-index: 9999;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+}
+
+.banner-section .navbar.newClass .navbar-nav {
+	margin-left: 0;
+}
+
+.banner-section .navbar.newClass .nav-btn button:hover {
+	background-color: #fff;
+	color: #9E9171 !important;
+}
+
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.banner-section .navbar.newClass .header-social-icons {
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+} 
+
+.banner-section-content.newBannerClass {
+	margin-top: 71px;
+}
+
+@media (min-width: 1350px) {
+	.banner-section .navbar.newClass {
+		padding-left: 220px;
+		padding-right: 220px;
+	}
+}
+
+@media (max-width: 1220px) {
+	footer .footer-content ul li a {
+		font-size: 12px;
+		line-height: 14px;
+	}
+
+	footer .logo-desktop {
+		width: 145px;
+	}
+
+	.bear-image-section img {
+		width: 100%;
+	}
+
+	.faq-img {
+		width: 100%;
+	}
+
+	.haunted-section-body .haunted-section-scroll-images .img-haunted {
+		height: 200px;
+	}
+
+	.haunted-section-body .haunted-section-scroll-images .img-haunted.img14, .haunted-section-body .haunted-section-scroll-images .img-haunted.img13 {
+		height: 200px;
+	}
+
+	.roadmap-section .road-t, .haunted-section-body .huanted-t, .faq-section .faq-title {
+		margin-top: 100px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.creation-tablet,
+	.creation-mobile,
+	.web-top.tablet,
+	.web-top.mobile,
+	.web-mid.tablet,
+	.web-mid.mobile {
+		display: none;
+	}	
+
+	.creation-desktop {
+		display: block;
+	}
+
+	.web-top.desktop,
+	.web-mid.desktop,
+	.web-bottom {
+		display: block;
+	}
+}
+
+@media (max-width: 1024px) {
+	.banner-section {
+		background-image: url('../images/banner-haunted-tablet.png');
+	}
+
+	.banner-section .banner-section-content .banner-title {
+		font-size: 64px;
+	}
+
+	.creation-desktop,
+	.creation-mobile {
+		display: none;
+	}
+
+	.creation-tablet {
+		display: block;
+	}
+
+	.banner-section .white-creation {
+		bottom: -140px;
+	}
+
+	.banner-section .white-creation {
+		width: 188px;
+		bottom: -100px;
+		right: 50px;
+	}
+
+	.bear-image-section img {
+		width: 100%;
+	}
+
+	.roadmap-section .road-t, .haunted-section-body .huanted-t,
+	.faq-section .faq-title {
+		font-size: 80px;
+		line-height: 120%;
+	}
+
+	.haunted-section-body {
+		padding-top: 104px;
+	}
+
+	.cardss .card-header h2 button {
+		font-size: 14px;
+	}
+
+	.web-top.desktop,
+	.web-top.mobile,
+	.web-mid.desktop,
+	.web-mid.mobile,
+	.web-bottom {
+		display: none;
+	}
+
+	.web-top.tablet,
+	.web-mid.tablet {
+		display: block;
+	}
+}
+
+@media (max-width: 991px) {
+	.banner-section .navbar-collapse {
+		top: 110px;
+		position: absolute;
+		width: 100%;
+		background-color: #9E9171;
+		z-index: 999;
+		left: 0;
+		right: 0;
+	}
+
+	.banner-section .navbar-collapse ul li {
+		width: 100%;
+		text-align: left;
+		margin: 5px 0;
+		border-bottom: 1px solid #ffffff94;
+	}	
+
+	.banner-section .nav-item a,
+	.banner-section .nav-item .header-social-icons,
+	.nav-btn {
+		margin: 5px 15px;
+	}
+
+	.banner-section .nav-item .header-social-icons {
+		margin-top: 0;
+		background-color: #fff;
+		padding: 10px;
+		display: inline-block;
+		border-radius: 5px;
+	}
+
+	.banner-section .navbar {
+		margin-top: 30px;
+	}
+
+	.haunted-section-body .haunted-section-scroll-images .img-haunted.img14, .haunted-section-body .haunted-section-scroll-images .img-haunted.img13 {
+		height: 170px;
+	}
+
+	.haunted-section-body .haunted-section-scroll-images .img-haunted {
+		height: 170px;
+	}
+}
+
+@media (max-width: 767px) {
+	.roadmap-section .jul-section img {	
+		width: 90px;
+	}
+
+	.bear-image-section {
+		-webkit-box-ordinal-group: 3;
+		    -ms-flex-order: 2;
+		        order: 2;
+	}
+
+	footer .footer-content ul {
+		display: none;
+	}
+
+	footer .footer-content .nav-btn {
+		display: none;
+	}
+
+	footer .footer-content {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		height: auto;
+	}
+
+	footer .footer-content .footer-text {
+		display: block;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 160%;
+		color: rgba(114, 114, 114, 0.9);
+		margin-top: 15px;
+		margin-bottom: 25px;
+	}
+
+	footer .footer-content .navbar-brand {
+		margin-top: 30px;
+	}
+
+	footer .footer-content .navbar-brand img {
+		width: 127px;
+	}
+
+	.faq-img {
+		margin-top: 0px;
+	}
+
+	.cardss .card-header h2 button {
+		font-size: 12px;
+	}
+
+	.web-top.desktop,
+	.web-top.tablet,
+	.web-mid.desktop,
+	.web-mid.tablet {
+		display: none;
+	}
+
+	.web-top.mobile,
+	.web-mid.mobile {
+		display: block;
+	}
+}
+
+@media (max-width: 576px) {
+	.banner-section .navbar-collapse {
+		top: 60px;
+	}
+
+	.banner-section {
+		background-image: url('../images/banner-haunted-mobile.png');
+		height: 854px;
+	}
+
+	.banner-section .banner-section-content .banner-title {
+		font-size: 40px;
+		padding: 0 15px;
+	}
+
+	.creation-tablet,
+	.creation-desktop {
+		display: none;
+	}
+
+	.creation-mobile {
+		display: block;
+	}	
+
+	.banner-section .navbar {
+		margin-top: 30px;
+	}
+
+	.banner-section .logo-desktop {
+		display: none;
+	}
+
+	.banner-section  .logo-mobile {
+		display: block;
+	}
+
+	.banner-section .banner-section-content .banner-section-btn {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		width: 100%;
+		padding: 0 15px;
+	}
+
+	.banner-section .banner-section-content .launch-time {
+		padding: 0 15px;
+	}
+
+	.banner-section .banner-section-content .banner-section-btn button {
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+
+	.banner-section .banner-section-content .launch-time .time-log .time-numeric {
+		font-size: 24px;
+		line-height: 38px;
+	}
+
+	.banner-section .banner-section-content .launch-time .launch-time-h,
+	.banner-section .banner-section-content .launch-time .time-log {
+		font-size: 12px;
+		line-height: 19px;
+	}
+
+	.banner-section .banner-section-content .launch-time .time-log {
+		margin: 0 5px;
+	}
+
+	.banner-section .banner-section-content {
+		margin-top: 36px;
+	}
+
+	.banner-section .white-creation {
+		right: 20px;
+		width: 138px;
+		bottom: -56px;
+	}
+
+	.roadmap-section .jul-section p {
+		font-size: 12px;
+		line-height: 200%;
+	}
+
+	.roadmap-section .jul-section {
+		margin-bottom: 35px;
+	}
+
+	.roadmap-section .oct-nov-section .jul-section p {
+		margin-right: 22px;
+	}
+
+	.roadmap-section .road-t, .haunted-section-body .huanted-t,
+	.faq-section .faq-title {
+		font-size: 48px;
+		line-height: 100%;
+	}
+
+	.roadmap-section .road-t, .haunted-section-body .huanted-t {
+		text-align: center;
+	}
+
+	.roadmap-section .road-t {
+		margin-top: 40px;
+	}
+
+	.haunted-section-body .haunted-section-scroll-images .img-haunted.img14, 
+	.haunted-section-body .haunted-section-scroll-images .img-haunted.img13,
+	.haunted-section-body .haunted-section-scroll-images .img-haunted {
+		height: 140px;
+	}
+
+	.roadmap-section .july-aug-section .jul-section p {
+		margin-left: 25px;
+	}
+
+	.roadmap-section h2.road-t.text-center.team-title {
+		margin-top: 100px !important;
+	}
+
+	.team-items,
+	.faq-section,
+	.roadmap-section h2.road-t.text-center.team-title,
+	.team-paragraph {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.web-top.mobile {
+		top: 230px;
+	}
+
+	.haunted-section-body .haunted-para {
+		text-align: center;
+	}
+
+	.cardss .collapse {
+		font-size: 12px;
+	}
+
+	.roadmap-section .road-t, .haunted-section-body .huanted-t, .faq-section .faq-title,
+	.faq-section .faq-plain-t {
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.haunted-section-body .haunted-para,
+	.team-paragraph,
+	.faq-section .faq-plain-t {
+		font-size: 12px;
+		line-height: 28.8px;
+	}
+
+	.team-items h4 {
+		font-size: 32px;
+		line-height: 32px;
+	}
+
+	.team-items p {
+		font-size: 12px;
+		line-height: 28.8px;
+	}
+
+	.team-items .col-md-3 {
+		margin-bottom: 20px;
+	}
+
+	.haunted-section-body .haunted-para, .team-paragraph, .faq-section .faq-plain-t,
+	.july-aug-section, .oct-nov-section {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.team-items,
+	.faq-section,
+	footer {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
