@@ -493,21 +493,21 @@
 
 /*Feedback*/
 
-section.user-feedback {
+.user-feedback {
 	padding: 120px 0px 0;
 }
 
-section.user-feedback .feedback-row {
+.user-feedback .feedback-row {
 	align-items: center;
 	justify-content: space-between;
 }
 
-section.user-feedback .feedback-row .feedback {
+.user-feedback .feedback-row .feedback {
 	margin-top: 115px;
 	line-height: 28px;
 }
 
-section.user-feedback .feedback .title {
+.user-feedback .feedback .title {
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 46px;
@@ -515,64 +515,63 @@ section.user-feedback .feedback .title {
 	padding-right: 90px;
 }
 
-section.user-feedback .feedback .desc {
+.user-feedback .feedback .desc {
 	line-height: 28px;
 }
 
-section.user-feedback .feedback .user_name {
+.user-feedback .feedback .user_name {
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 37.5px;
 	color: #f05922;
 }
 
-section.user-feedback .feedback .user_loc {
+.user-feedback .feedback .user_loc {
 	font-size: 24px;
 	font-weight: 400;
 	line-height: 28.13px;
 	color: #aaaaaa;
 }
 
-section.user-feedback .user-image {
+.user-feedback .user-image {
 	max-width: 450px;
 	width: 100%;
 	margin: 0 auto;
 }
 
-section.user-feedback .user-image img {
+.user-feedback .user-image img {
 	width: 100%;
 }
 
-
 /*Any Questions*/
 
-section.any-question {
+.any-question {
 	padding: 80px 0px;
 }
 
-section.any-question .container {
+.any-question .container {
 	max-width: 1038px;
 }
 
-section.any-question .bg-color {
+.any-question .bg-color {
 	background-color: #fff5f5;
 	padding: 65px 15px 20px;
 	border-radius: 30px;
 }
 
-section.any-question .bg-color .bg-img {
+.any-question .bg-color .bg-img {
 	background-image: url(../images/background-design.png);
 	background-repeat: no-repeat;
 	background-position-x: center;
 }
 
-section.any-question .bg-color .container-mx-w {
+.any-question .bg-color .container-mx-w {
 	max-width: 570px;
     width: 100%;
     margin: 0 auto;
 }
 
-section.any-question .bg-color .bg-img h1 {
+.any-question .bg-color .bg-img h1 {
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 37.5px;
@@ -580,11 +579,11 @@ section.any-question .bg-color .bg-img h1 {
 	margin-bottom: 0px;
 }
 
-section.any-question .bg-color .bg-img .mail-icon {
+.any-question .bg-color .bg-img .mail-icon {
 	padding-right: 15px;
 }
 
-section.any-question .bg-color .bg-img span {
+.any-question .bg-color .bg-img span {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 18px;
@@ -592,11 +591,11 @@ section.any-question .bg-color .bg-img span {
 	margin-bottom: 0px;
 }
 
-section.any-question .bg-color .bg-img form {
+.any-question .bg-color .bg-img form {
 	margin: 30px 0px;
 }
 
-section.any-question .bg-color .bg-img form input {
+.any-question .bg-color .bg-img form input {
 	box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
 	border-radius: 9px;
 	padding: 20px 60px;
@@ -604,18 +603,18 @@ section.any-question .bg-color .bg-img form input {
 	width: 75%;
 }
 
-section.any-question .bg-color .bg-img form input:focus {
+.any-question .bg-color .bg-img form input:focus {
 	outline: none;
 }
 
-section.any-question .bg-color .bg-img form input::placeholder {
+.any-question .bg-color .bg-img form input::placeholder {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 18px;
 	color: #666666;
 }
 
-section.any-question .bg-color .bg-img form button {
+.any-question .bg-color .bg-img form button {
 	background: #FB3F6C;
 	box-shadow: 0px 4px 18px rgba(251, 63, 108, 0.24);
 	border-radius: 9px;
