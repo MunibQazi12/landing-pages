@@ -15,7 +15,7 @@
 <body>
     <section class="banner-section-container position-relative">
         <img src="images/banner-left-top.png" alt="block" class="position-absolute top-0 left-0 top-block" />
-        <header class="pt-5 pb-5">
+        <header>
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-right">
@@ -405,5 +405,15 @@
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 150) {
+            $('.banner-section-container').addClass('fixed-header');
+            } else {
+            $('.banner-section-container').removeClass('fixed-header');
+            }
+        });
+    </script>
 </body>
 </html>

@@ -24,9 +24,27 @@
 
 /*Common Styles*/
 
+header {
+	height: 100px;
+	line-height: 100px;
+}
+
 .banner-section-container {
 	background-color: #F9F9FA;
 	font-family: 'Roboto', sans-serif;
+}
+
+.banner-section-container header {
+	position: relative;
+	transition: background-color 0.2s linear;
+}
+
+.banner-section-container.fixed-header header {
+	background-color: #ed5936;
+	position: fixed;
+    width: 100%;
+    z-index: 99;
+    top: 0;
 }
 
 .banner-section-container .top-block {
@@ -42,6 +60,11 @@
 	height: 52px;
 	font-size: 24px;
 	line-height: 28px;
+}
+
+.banner-section-container.fixed-header header .login-btn {
+	background-color: #fff;
+	color: #f05922 !important;
 }
 
 .banner-section-container .banner-section {
