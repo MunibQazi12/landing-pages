@@ -640,6 +640,11 @@ header {
 	padding: 20px 60px;
 	height: 60px;
 	width: 75%;
+	border: 2px solid transparent;
+}
+
+.any-question .bg-color .bg-img form input:hover, .any-question .bg-color .bg-img form input:focus {
+	border: 2px solid pink;
 }
 
 .any-question .bg-color .bg-img form input:focus {
@@ -737,6 +742,15 @@ footer .payments .payment-methods span {
 	font-size: 16px;
 	color: #8D8D8D;
 	line-height: 80px;
+}
+
+button {
+	opacity: 1;
+	transition: opacity 0.5s linear;
+}
+
+button:hover {
+	opacity: 0.8;
 }
 
 
