@@ -407,6 +407,10 @@ footer .footer-content .footer-text {
 	padding-right: 0;
 }
 
+.cardss .card-header h2 button:hover {
+	color: #9E9171;
+}
+
 .cardss .card-header h2 button img {
 	-webkit-transform: rotate(180deg);
 	    -ms-transform: rotate(180deg);
