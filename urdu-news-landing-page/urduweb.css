@@ -1,0 +1,14 @@
+ @font-face {
+     font-family: myFirstFont;
+     src: url(urdufonts/NotoNastaliqUrdu-Regular.ttf);
+ }
+
+ * {
+     font-family: myFirstFont;
+ }
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    margin-top: 16px;
+}
