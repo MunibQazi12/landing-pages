@@ -1,0 +1,19 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/NotoNastaliqUrdu-Regular.ttf);
+}
+
+* {
+     font-family: myFirstFont;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content.mystyle {
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    margin-top: 16px;
+}
