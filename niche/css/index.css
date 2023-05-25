@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (min-width: 1860px){
+    #why_niche, #real_niche{
+        top: -300px;
+    }
+    .slider-padding{
+        padding-top: 10rem !important;
+    }
+    #stay_on_track{
+        top: -20rem;
+    }
+    .green-svg{
+        height: 950px !important;
+    }
+    .real-content{
+        top: -25rem !important;
+    }
+    #your_school{
+        top: -30rem;
+    }
+    #rankings, #partners{
+        top: -45rem;
+    }
+    /* #partners{
+        top: -50rem;
+    } */
+    #not_sure{
+        top: -45rem;
+    }
+    .footer{
+        top: -35rem !important;
+    }
+    #logo{
+        top: -6rem !important;
+    }
+    .real-niche-svg{
+        height: 905px !important;
+    }
+}
