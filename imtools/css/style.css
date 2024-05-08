@@ -72,6 +72,10 @@ header {
 	z-index: 9;
 }
 
+.fixed-header .banner-section {
+	margin-top: 200px;
+}
+
 .banner-section-container .banner-section h1 {
 	font-size: 72px;
 	line-height: 84px;
@@ -137,11 +141,11 @@ header {
 .digital-age .digital-age-section {
 	border: 2px solid #F7F7F7;
 	border-radius: 8px;
-	padding: 50px 40px 30px;
+	padding: 50px 15px 10px;
 	margin-bottom: 40px;
 	min-height: 350px;
 	background-color: #fff;
-	transition: background-color 0.5 linear;
+	transition: background-color 0.5s ease;
 }
 
 .digital-age .digital-age-section:hover {
@@ -155,16 +159,31 @@ header {
 	font-size: 22px;
 	line-height: 26px;
 	margin-top: 43px;
+	transition: 0.3s all;
+	height: 52px;
 }
 
 .digital-age .digital-age-section p {
 	color: #7C7C7C;
 	font-size: 16px;
 	line-height: 22px;
+	transition: 0.3s all;
+	height: 132px;
+	overflow-y: auto;
+	width: 100%;
+	max-width: 352px;
+	margin: 5px auto;
+}
+
+.digital-age .digital-age-section .digital-age-icon {
+	width: 76px;
+	height: 76px;
+	margin: 0 auto;
 }
 
 .digital-age .digital-age-section:hover img {
 	filter: brightness(0) invert(1);
+	transition: 0.5s all;
 }
 
 .digital-age .digital-age-section:hover h4 {
@@ -766,6 +785,13 @@ button:hover {
 }
 
 @media (max-width: 991px) {
+	.banner-section-container .banner-section {
+		margin-top: 145px;
+	}
+	
+	.fixed-header .banner-section {
+		margin-top: 245px;
+	}
 	section.spend-money {
 		padding-bottom: 45px;
 	}
@@ -843,6 +869,14 @@ button:hover {
 	.banner-section-container .banner-section h1 {
 		font-size: 56px;
     	line-height: 70px;
+	}
+
+	.digital-age .digital-age-section h4 {
+		height: unset;
+	}
+	
+	.digital-age .digital-age-section p {
+		height: unset;
 	}
 }
 
