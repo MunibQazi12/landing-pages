@@ -1,0 +1,443 @@
+@font-face {
+    font-family: ProixmaNova;
+  
+    src: url(fonts/proxima-nova-regular.ttf);
+  }
+  
+  @font-face {
+    font-family: ProixmaNovaMedium;
+  
+    src: url(fonts/proxima-nova-medium.ttf);
+  }
+  
+  @font-face {
+    font-family: ProixmaNovaBold;
+  
+    src: url(fonts/proxima-nova-bold.otf);
+  }
+  
+  @font-face {
+    font-family: ProixmaNovaSemiBold;
+  
+    src: url(fonts/proxima-nova-semibold.ttf);
+  }
+  
+  @font-face {
+    font-family: GilroyBold;
+  
+    src: url(fonts/gilroy-bold.ttf);
+  }
+  
+  @font-face {
+    font-family: GilroySemiBold;
+  
+    src: url(fonts/gilroy-semiBold.ttf);
+  }
+  
+  @font-face {
+    font-family: GilroyMedium;
+  
+    src: url(fonts/gilroy-medium.ttf);
+  }
+  
+  @font-face {
+    font-family: HelveticaNeueMedium;
+  
+    src: url(fonts/HelveticaNeueMedium.ttf);
+  }
+  
+  .font-GilroyBold {
+    font-family: GilroyBold, sans-serif;
+  }
+  
+  .font-GilroyMedium {
+    font-family: GilroyMedium, sans-serif;
+  }
+  
+  .font-GilroySemiBold {
+    font-family: GilroySemiBold, sans-serif;
+  }
+  
+  .font-HelveticaNeueMedium {
+    font-family: HelveticaNeueMedium, sans-serif;
+  }
+  
+  .font-proximaNova {
+    font-family: ProixmaNova, sans-serif;
+  }
+  
+  .font-proximaNovaBold {
+    font-family: ProixmaNovaBold, sans-serif;
+  }
+  
+  .font-proximaNovaMedium {
+    font-family: ProixmaNovaMedium, sans-serif;
+  }
+  
+  .font-proximaNovaSemiBold {
+    font-family: ProixmaNovaSemiBold, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "ProixmaNova", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: white;
+  }
+  
+  .banner-gradient {
+    background-image: linear-gradient(270deg, #602255 0%, #3f63a6 100%);
+  }
+  
+  .community-gradient {
+    background-image: linear-gradient(227deg, #602255 0%, #3f63a6 100%);
+  }
+  
+  .footer-gradient {
+    background-image: linear-gradient(90deg, #320c2d 0%, #602255 100%);
+  }
+
+  .sideBar-mob {
+    background: transparent linear-gradient(85deg, #3f63a6 0%, #621c56 100%);
+    transition: 0.7s all;
+  }
+
+  .sideBar-mob.open {
+    left: 0;
+    z-index: 10;
+  }
+
+  #overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+
+  #overlay.open {
+    display: block;
+  }
+
+  .communityConversation::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(44deg, #3e63a8 0%, #602255 100%);
+    transition: 0.4s all;
+  }
+  
+  .communityConversation:hover::before {
+    top: 0;
+  }
+  
+  .exploreTheService {
+    transition: 0.5s all;
+  }
+  
+  .subscribeBtn {
+    width: 305px;
+    height: 65px;
+    border-radius: 40px;
+    letter-spacing: 2.35px;
+  }
+  
+  .bookYourCall {
+    height: 83px;
+    width: 297px;
+    border-radius: 42px;
+  }
+  
+  .learnMoreBtn {
+    height: 58px;
+    width: 205px;
+    border-radius: 42px;
+  }
+  
+  .bookCallBtn {
+    background: transparent linear-gradient(85deg, #3f63a6 0%, #621c56 100%);
+    border-radius: 42px;
+    max-width: 297px;
+    width: 100%;
+  }
+
+  .sideBar-mob {
+    background: transparent linear-gradient(85deg, #3f63a6 0%, #621c56 100%);
+  }
+  
+  .cardBg {
+    background: transparent linear-gradient(34deg, #3f63a6 0%, #621c56 100%);
+    box-shadow: 0px 0px 23px #0000002e;
+  }
+  
+  .communityConversationCard {
+    margin-top: 58.51px;
+    max-width: 1120px;
+    padding-top: 30.15px;
+    border-radius: 30px;
+  }
+  
+  .ReviewSlider {
+    max-width: 540px;
+    width: 100% !important;
+    /* height: 329px; */
+  }
+  
+  .ReviewSlider .ReviewSliderContainer {
+    max-width: 100%;
+    /* width: 100% !important; */
+  }
+  
+  .ReviewSlider.case-study-template {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 0 !important;
+  }
+  
+  .ReviewSlider.case-study-template .slick-slide {
+    max-width: 62rem !important;
+    width: 100% !important;
+  }
+  
+  .ReviewSlider.case-study-template .slick-dots {
+    bottom: 20px;
+  }
+  
+  .ReviewSlider.participant-quotes {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .ReviewSlider.participant-quotes .ReviewSliderContainer {
+    max-width: 43.75rem;
+  }
+  
+  .ReviewSlider.participant-quotes .slick-track {
+    display: flex;
+    max-width: 100%;
+  }
+  
+  .ourTeamWidth {
+    width: calc(100% - 20rem);
+  }
+  
+  .fixed-header {
+    position: fixed;
+    top: 0%;
+    z-index: 999999999;
+    background: #fff;
+  }
+  
+  .border-primary {
+    --tw-border-opacity: 1;
+    border-color: rgb(62 99 168 / var(--tw-border-opacity));
+  }
+  
+  .border-semiPrimary {
+    --tw-border-opacity: 1;
+    border-color: rgb(63 99 166 / var(--tw-border-opacity));
+  }
+  
+  .border-white {
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  }
+  
+  .bg-cardCommunityBg {
+    --tw-bg-opacity: 1;
+    background-color: rgb(224 232 246 / var(--tw-bg-opacity));
+  }
+  
+  .bg-communityConversationBg {
+    background-color: #b7c9e973;
+  }
+  
+  .bg-dieSectionBg {
+    --tw-bg-opacity: 1;
+    background-color: rgb(225 232 246 / var(--tw-bg-opacity));
+  }
+  
+  .bg-lightestBlueBg {
+    --tw-bg-opacity: 1;
+    background-color: rgb(234 241 255 / var(--tw-bg-opacity));
+  }
+  
+  .bg-mehroon {
+    --tw-bg-opacity: 1;
+    background-color: rgb(96 34 85 / var(--tw-bg-opacity));
+  }
+  
+  .bg-primary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(62 99 168 / var(--tw-bg-opacity));
+  }
+  
+  .bg-semiPrimary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(63 99 166 / var(--tw-bg-opacity));
+  }
+  
+  .bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+  
+  .bg-yellow {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 218 0 / var(--tw-bg-opacity));
+  }
+  
+  @media (min-width: 1280px) {
+    .ReviewSlider .ReviewSliderContainer {
+      max-width: 618px;
+    }
+  
+    .ReviewSlider {
+      max-width: 618px;
+    }
+  }
+  
+  @media (max-width: 1023px) {
+    .bookCallBtn {
+      max-width: 200px !important;
+    }
+  
+    .solutionDropdown {
+      max-width: 200px !important;
+    }
+  
+    .communityConversation {
+      max-width: 100%;
+    }
+  
+    .ReviewSlider {
+      margin: 30px auto 0px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .widthHundardPercent {
+      width: 100% !important;
+    }
+  
+    .freeResourceInput {
+      width: 100% !important;
+      height: 52px !important;
+    }
+  
+    .subscribeBtn {
+      height: 56px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .ourTeamWidth {
+      width: 100%;
+    }
+    .compniessLogo .slick-prev {
+      left: 10px;
+    }
+    .compniessLogo .slick-next {
+      right: 10px;
+    }
+    .exploreTheService {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 560px) {
+    .Communityimg-mobile {
+      flex-wrap: wrap !important;
+      height: auto !important;
+      padding-bottom: 20px !important;
+    }
+    .dieimg,
+    .employeRectuirment,
+    .retreat {
+      max-width: 100% !important;
+    }
+    .Communityimg-mobile1 {
+      max-width: 100%;
+      height: 18rem;
+      background-position: center;
+      background-size: 100% 100%;
+      border-radius: 30px 30px 0px 0px;
+    }
+    .Communityimg1 {
+      max-width: 560px !important;
+      height: 353px !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      margin-right: 0px !important;
+    }
+    .deepDiveResponsiveBtn {
+      justify-content: center !important;
+      flex-wrap: wrap !important;
+      border-radius: 50px;
+    }
+    .deepDiveResponsiveBtn p {
+      padding: 0px;
+    }
+    .deepDiveResponsiveBtn button {
+      margin-right: 0;
+      margin-top: 12px;
+    }
+    .mobile-width {
+      width: 70% !important;
+    }
+    .responsiveForm {
+      width: 100% !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bookCallBtn {
+      display: none;
+    }
+  
+    .community_bgImage {
+      background-position-x: -60px;
+    }
+  
+    .mobile_setting {
+      width: auto !important;
+    }
+  
+    .bookYourCall {
+      height: 56px;
+      width: 220px;
+      font-size: 20px;
+    }
+  
+    .freeResourceInput {
+      margin: 0 auto;
+    }
+  
+    .responisveButton {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      width: 100%;
+    }
+  
+    .max-w-fourSeventyThree {
+      font-size: 14px !important;
+    }
+    .max-w-oneEightySix {
+      max-width: 124px;
+    }
+    .responsiveBtn {
+      width: 100% !important;
+      text-align: center !important;
+    }
+  }
+  @media (max-width: 420px) {
+    .Communityimg-mobile1 {
+      height: 12rem;
+    }
+  }

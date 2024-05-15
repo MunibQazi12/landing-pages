@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en" scroll-smoth>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <title>Assessmate</title>
+        <link href="output.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="font-inter">
+            <header class="w-full navbarBackdrop fixed top-0 z-40 border-b border-[#d4e7f4]">
+                <nav class="max-w-6xl px-5 mx-auto py-3 flex gap-3 justify-between items-center">
+                    <a href="/" class="flex items-center cursor-pointer">
+                        <img src="images/Logo.png" alt="logo" class="sm:w-auto w-5 rotate">
+                        <p class="ml-[6px] font-extrabold text-gray-900 sm:text-xl text-sm leading-[109.30%]">AssessMate</p>
+                    </a>
+                    <ul class="lg:flex hidden text-sm text-[#18191F] items-center gap-2">
+                        <li>
+                            <a href="/about" class="flex items-center p-2 rounded-lg lg:text-gray-900 text-white hover:bg-gray-100 dark:hover:bg-gray-700 group hover:scale-105 transition duration-500 ease-linear">
+                                <span class="flex-1 lg:ms-0 ms-3 whitespace-nowrap group-hover:text-[#747bff] transition duration-500 ease-linear">About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/demo-details" class="flex items-center p-2 rounded-lg lg:text-gray-900 text-white hover:bg-gray-100 dark:hover:bg-gray-700 group hover:scale-105 transition duration-500 ease-linear">
+                                <span class="flex-1 lg:ms-0 ms-3 whitespace-nowrap group-hover:text-[#747bff] transition duration-500 ease-linear">Free Demo Details</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/features" class="flex items-center p-2 rounded-lg lg:text-gray-900 text-white hover:bg-gray-100 dark:hover:bg-gray-700 group hover:scale-105 transition duration-500 ease-linear">
+                                <span class="flex-1 lg:ms-0 ms-3 whitespace-nowrap group-hover:text-[#747bff] transition duration-500 ease-linear">Feature</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pricing" class="flex items-center p-2 rounded-lg lg:text-gray-900 text-white hover:bg-gray-100 dark:hover:bg-gray-700 group hover:scale-105 transition duration-500 ease-linear">
+                                <span class="flex-1 lg:ms-0 ms-3 whitespace-nowrap group-hover:text-[#747bff] transition duration-500 ease-linear">Pricing</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/career" class="flex items-center p-2 rounded-lg lg:text-gray-900 text-white hover:bg-gray-100 dark:hover:bg-gray-700 group hover:scale-105 transition duration-500 ease-linear">
+                                <span class="flex-1 lg:ms-0 ms-3 whitespace-nowrap group-hover:text-[#747bff] transition duration-500 ease-linear">Career</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/faqs" class="flex items-center p-2 rounded-lg lg:text-gray-900 text-white hover:bg-gray-100 dark:hover:bg-gray-700 group hover:scale-105 transition duration-500 ease-linear">
+                                <span class="flex-1 lg:ms-0 ms-3 whitespace-nowrap group-hover:text-[#747bff] transition duration-500 ease-linear">FAQs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contact" class="group flex items-center p-2 rounded-lg lg:text-gray-900 text-white hover:bg-gray-100 dark:hover:bg-gray-700 group hover:scale-105 transition duration-500 ease-linear">
+                                <span class="flex-1 lg:ms-0 ms-3 whitespace-nowrap group-hover:text-[#747bff] transition duration-500 ease-linear">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="flex md:gap-5 sm:gap-3 gap-2 items-center ">
+                        <a href="/creation-ai" type="button" class="linnerBg hover:text-white flex text-center items-center justify-center sm:w-[160px] w-[100px] md:py-3 sm:py-2 py-1 border-0 font-medium font-Inter sm:px-6 px-1 rounded-[6px] sm:text-base text-sm text-white hover:scale-105 transition duration-500 ease-linear">Join Waitlist</a>
+                        <button onclick="sideBar()" id="sidebarBtn" type="button" class="sm:w-10 w-7 sm:h-10 h-7 lg:hidden block p-0 focus:outline-none outline-none focus:border-none cursor-pointer bg-transparent">
+                            <img src="images/burger-icon.svg" class="h-full w-full" alt="mobilenav">
+                        </button>
+                    </div>
+                    <div onclick="sideBarClose()" id="overlay" class="hidden w-full fixed top-0 left-0 bg-black bg-opacity-50 z-10 h-screen">
+                    </div>
+                    <aside id="default-sidebar" aria-label="Sidebar" class="fixed top-0 -left-[280px] z-40 w-[280px] sidebar-animation h-screen backdrop-blur-3xl">
+                        <div class="h-full px-3 py-4 overflow-y-auto bg-gray-800 opacity-95">
+                            <div class="flex justify-between items-center pt-1 pb-3">
+                                <a href="/" class="flex items-center">
+                                    <img src="images/Logo.png" alt="logo" class="w-6 h-6 rotate">
+                                    <p class="ml-[6px] font-extrabold text-base text-white leading-[109.30%]">AssessMate</p>
+                                </a>
+                                <button onclick="sideBarClose()" type="button" class="linnerBg rounded-[30px] text-base font-semibold text-white px-4 py-1.5 border-none">Close</button>
+                            </div>
+                            <ul class="space-y-2 text-white">
+                                <li>
+                                    <a href="/about" class="flex items-center p-2 rounded-lg lg:text-gray-900 text-white hover:bg-gray-100 dark:hover:bg-gray-700 group hover:scale-105 transition duration-500 ease-linear">
+                                        <span class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">
+                                            <img src="images/about-Icon.svg" alt="About" class="invert group-hover:invert-0 brightness-100 ">
+                                        </span>
+                                        <span class="flex-1 lg:ms-0 ms-3 whitespace-nowrap">About</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/demo-details" class="flex items-center p-2 rounded-lg lg:text-gray-900 text-white hover:bg-gray-100 dark:hover:bg-gray-700 group hover:scale-105 transition duration-500 ease-linear">
+                                        <span class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">
+                                            <img src="images/about-Icon.svg" alt="Free Demo Details" class="invert group-hover:invert-0 brightness-100 ">
+                                        </span>
+                                        <span class="flex-1 lg:ms-0 ms-3 whitespace-nowrap">Free Demo Details</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/features" class="flex items-center p-2 rounded-lg lg:text-gray-900 text-white hover:bg-gray-100 dark:hover:bg-gray-700 group hover:scale-105 transition duration-500 ease-linear">
+                                        <span class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">
+                                            <img src="images/features.svg" alt="Feature" class="invert group-hover:invert-0 brightness-100 ">
+                                        </span>
+                                        <span class="flex-1 lg:ms-0 ms-3 whitespace-nowrap">Feature</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/pricing" class="flex items-center p-2 rounded-lg lg:text-gray-900 text-white hover:bg-gray-100 dark:hover:bg-gray-700 group hover:scale-105 transition duration-500 ease-linear">
+                                        <span class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">
+                                            <img src="images/pricing.svg" alt="Pricing" class="invert group-hover:invert-0 brightness-100 ">
+                                        </span>
+                                        <span class="flex-1 lg:ms-0 ms-3 whitespace-nowrap">Pricing</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/career" class="flex items-center p-2 rounded-lg lg:text-gray-900 text-white hover:bg-gray-100 dark:hover:bg-gray-700 group hover:scale-105 transition duration-500 ease-linear">
+                                        <span class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">
+                                            <img src="images/carrer-Icon.svg" alt="Career" class="invert group-hover:invert-0 brightness-100 ">
+                                        </span>
+                                        <span class="flex-1 lg:ms-0 ms-3 whitespace-nowrap">Career</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/faqs" class="flex items-center p-2 rounded-lg lg:text-gray-900 text-white hover:bg-gray-100 dark:hover:bg-gray-700 group hover:scale-105 transition duration-500 ease-linear">
+                                        <span class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">
+                                            <img src="images/faqs-Icon.svg" alt="FAQs" class="invert group-hover:invert-0 brightness-100 ">
+                                        </span>
+                                        <span class="flex-1 lg:ms-0 ms-3 whitespace-nowrap">FAQs</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/contact" class="flex items-center p-2 rounded-lg lg:text-gray-900 text-white hover:bg-gray-100 dark:hover:bg-gray-700 group hover:scale-105 transition duration-500 ease-linear">
+                                        <span class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">
+                                            <img src="images/contact-icon.svg" alt="Contact" class="invert group-hover:invert-0 brightness-100 ">
+                                        </span>
+                                        <span class="flex-1 lg:ms-0 ms-3 whitespace-nowrap">Contact</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                </nav>
+              </header>
+            <section class="w-full bg-cover bg-no-repeat bg-center pt-[74px] overflow-hidden" style="background-image: url(images/main-banner-bg.png);">
+                <div class="max-w-6xl px-5 mx-auto pt-[59px] md:pb-[235px] sm:pb-[160px] pb-[124px] relative">
+                    <div class="">
+                        <img height="158px" width="158px" src="images/logo-Gif.gif" alt="gif-logo" class="mx-auto">
+                    </div>
+                    <div class="max-w-6xl sm:px-4 mt-8 flex flex-col justify-center items-center mx-auto">
+                        <h1 class="font-inter font-extrabold text-black text-center lg:text-[64px] md:text-5xl sm:text-[40px] text-2xl !leading-[129%] ZoomInDefault">Intelligent Assessment Reform, in a Single Click</h1>
+                        <p class="sm:mt-8 mt-5 text-black font-normal text-base text-center leading-tight">Seamlessly adapt your assessments for the generative AI era, ensuring academic integrity and innovation.</p>
+                        <div class=" sm:mt-8 mt-5 flex justify-center items-center">
+                            <a href="/creation-ai" class="bg-[#8C30F5] w-[160px] border-0 outline-none focus:outline-none text-center text-white hover:text-white text-base py-3 px-6 rounded-md mx-auto hover:scale-105 transition duration-500 ease-linear">Try for Free</a>
+                        </div>
+                    </div>
+                    <div class="!absolute bottom-0 z-10 bottom-animation">
+                        <img src="images/customBlob.png" alt="customBlob">
+                    </div>
+                </div>
+            </section>
+            <section class="max-w-6xl	px-4 sm:pb-8 pb-6 lg:pt-[73px] sm:pt-12 pt-10 mx-auto">
+                <h2 class="lg:text-5xl tracking-[0.5px] sm:text-3xl text-2xl text-gray-900 !leading-[133.33%] font-extrabold text-center">
+                  Revolutionising Assessment Reform for All Educators
+                </h2>
+                <p class="sm:mt-8 mt-6 text-black font-normal text-base text-center leading-tight">
+                  In the rapidly evolving educational landscape, the push for assessment
+                  reform is imperative. Yet, the reality is that assessment reform takes
+                  time and resources that academics simply do not have. This leads to a
+                  disparity in educational quality and the adoption of new technologies
+                  across courses and disciplines, ultimately failing our students. We need
+                  a better way.
+                </p>
+                <div class="sm:mt-10 mt-6 lg:grid lg:grid-cols-4 md:flex lg:flex-wrap lg:justify-center grid grid-cols-1 xl:gap-8 lg:gap-4 gap-y-4 overflow-hidden">
+                    <div class="py-4 lg:px-0 sm:px-3 text-gray-900 lg:max-w-auto lg:w-full md:w-1/2 w-full max-w-xl lg:text-start text-center md:mx-0 mx-auto">
+                        <div class="flex xl:gap-4 lg:gap-2 gap-8 items-center lg:justify-start justify-center">
+                            <div class="xl:h-[72px] h-14 xl:w-[72px] w-14 bg-gray-100 rounded-full flex justify-center items-center glow-animation">
+                                <img src="images/approach_1.svg" alt="Approach01" />
+                            </div>
+                            <div class="lg:block hidden">
+                                <img src="images/Line-bottom-top.svg" alt="indicatorbottomtop" />
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold leading-7 mt-[13px] md:h-14 bottom-animation">
+                        Universal Access
+                        </p>
+                        <p class="sm:text-lg text-base leading-[26px] mt-1 bottom-animation">
+                        Experience the ease and impact of AssessMate. Our revolutionary
+                        platform enables effortless implementation of state-of-the-art
+                        assessment reforms with a single click.
+                        </p>
+                    </div>
+                    <div class="py-4 lg:px-0 sm:px-3 text-gray-900 lg:max-w-auto lg:w-full md:w-1/2 w-full max-w-xl lg:text-start text-center md:mx-0 mx-auto">
+                        <div class="flex xl:gap-4 lg:gap-2 gap-8 items-center lg:justify-start justify-center">
+                            <div class="xl:h-[72px] h-14 xl:w-[72px] w-14 bg-gray-100 rounded-full flex justify-center items-center glow-animation_2">
+                                <img src="images/approach_2.svg" alt="Approach02" />
+                            </div>
+                            <div class="lg:block hidden">
+                                <img src="images/Line-top-bottom.svg" alt="indicatortopbottom" />
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold leading-7 mt-[13px] md:h-14 bottom-animation">
+                        Evidence-Backed Transformation
+                        </p>
+                        <p class="sm:text-lg text-base leading-[26px] mt-1 bottom-animation">
+                        Our AI-driven platform is rooted in cutting-edge educational
+                        research and aligned with TEQSA guidelines and the Higher Education
+                        Standards Framework.
+                        </p>
+                    </div>
+                    <div class="py-4 lg:px-0 sm:px-3 text-gray-900 lg:max-w-auto lg:w-full md:w-1/2 w-full max-w-xl lg:text-start text-center md:mx-0 mx-auto">
+                        <div class="flex xl:gap-4 lg:gap-2 gap-8 items-center lg:justify-start justify-center">
+                            <div class="xl:h-[72px] h-14 xl:w-[72px] w-14 bg-gray-100 rounded-full flex justify-center items-center glow-animation">
+                                <img src="images/approach_3.svg" alt="Approach03" />
+                            </div>
+                            <div class="lg:block hidden">
+                                <img src="images/Line-bottom-top.svg" alt="indicatorbottomtop" />
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold leading-7 mt-[13px] md:h-14 bottom-animation">
+                        Time Savings
+                        </p>
+                        <p class="sm:text-lg text-base leading-[26px] mt-1 bottom-animation">
+                        At AssessMate, we understand the importance of academic time. Our
+                        platform is projected to save educators at least 16 hours of work
+                        per course or unit by streamlining.
+                        </p>
+                    </div>
+                    <div class="py-4 lg:px-0 sm:px-3 text-gray-900 lg:max-w-auto lg:w-full md:w-1/2 w-full max-w-xl lg:text-start text-center md:mx-0 mx-auto">
+                        <div class="flex xl:gap-4 lg:gap-2 gap-8 items-center lg:justify-start justify-center">
+                            <div class="xl:h-[72px] h-14 xl:w-[72px] w-14 bg-gray-100 rounded-full flex justify-center items-center glow-animation_2">
+                                <img src="images/approach_4.svg" alt="Approach04" />
+                            </div>
+                        </div>
+                        <p class="text-lg font-bold leading-7 mt-[13px] md:h-14 bottom-animation">
+                        Ensuring Quality and Consistency
+                        </p>
+                        <p class="sm:text-lg text-base leading-[26px] mt-1 bottom-animation">
+                        Welcome to AssessMate, where we're dedicated to transforming
+                        assessment practices for the better. With our research-driven
+                        approach, we guarantee high-quality, engaging assessments.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="max-w-[1440px] w-full mx-auto px-4 sm:my-8 my-6">
+            <h2 class="lg:text-5xl tracking-[0.5px] sm:text-3xl text-2xl text-gray-900 !leading-[133.33%] font-extrabold text-center">
+                Why choose AssessMate
+            </h2>
+            <div class=" flex md:flex-nowrap flex-wrap gap-8 justify-center items-center mt-10 overflow-hidden">
+                <div class="md:w-1/2 w-full flex md:justify-end">
+                    <img
+                        src="images/whychoose.png"
+                        alt="whychoose"
+                        class="max-w-[480px] w-full md:mx-0 mx-auto"
+                    />
+                </div>
+                <div class="md:w-1/2 w-full">
+                <ul class="max-w-[440px] pl-[15px]">
+                    <li class="flex items-start gap-2.5 text-black list-none right-animation">
+                        <img class="sm:mt-3.5 mt-2.5" src="images/DotCyan.svg" alt="cyandot" />
+                        <div>
+                            <h5 class="sm:text-2xl text-lg font-semibold">
+                            Future-proof assessmants
+                            </h5>
+                            <p class="sm:text-lg text-base sm:mt-2 mt-1 sm:leading-8">
+                                Integrate AI and focus on relevant skill setes to prepare
+                                students for the digital future.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2.5 text-black list-none sm:mt-10 mt-6 right-animation">
+                        <img class="sm:mt-3.5 mt-2.5" src="images/DotPink.svg" alt="pinkdot" />
+                        <div>
+                            <h5 class="sm:text-2xl text-lg font-semibold">
+                            Future-proof assessmants
+                            </h5>
+                            <p class="sm:text-lg text-base sm:mt-2 mt-1 sm:leading-8">
+                                Integrate AI and focus on relevant skill setes to prepare
+                                students for the digital future.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2.5 text-black list-none sm:mt-10 mt-6 right-animation">
+                        <img class="sm:mt-3.5 mt-2.5" src="images/DotGreen.svg" alt="greendot" />
+                        <div>
+                            <h5 class="sm:text-2xl text-lg font-semibold">
+                            Future-proof assessmants
+                            </h5>
+                            <p class="sm:text-lg text-base sm:mt-2 mt-1 sm:leading-8">
+                                Integrate AI and focus on relevant skill setes to prepare
+                                students for the digital future.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </section>
+            <section class="max-w-6xl w-full mx-auto px-5 sm:py-8 py-6 overflow-hidden">
+                <h2 class="lg:text-5xl tracking-[0.5px] sm:text-3xl text-2xl text-gray-900 !leading-[133.33%] font-extrabold text-center lg:text-start">How it Works</h2>
+                <div class="flex lg:flex-nowrap flex-wrap justify-center md:gap-8 mt-7 md:mt-12 items-center">
+                    <div class="w-full max-w-[442px] md:max-w-[540px]">
+                        <div class="w-full flex flex-col lg:flex-row justify-center lg:justify-normal items-center lg:items-start gap-3 xl:gap-10">
+                            <div class="w-[72px] h-[72px] rounded-full glow-animation">
+                                <img class="w-full h-full" src="images/FeatureIconwithcircle.svg" alt="assestone" />
+                            </div>
+                            <div class="text-center lg:text-start text-gray-900 lg:w-[calc(100%-72px)]">
+                                <h5 class="text-xl sm:text-2xl font-semibold leading-5 sm:leading-8">
+                                  Input You Assessment
+                                </h5>
+                                <p class="text-sm sm:text-base font-normal leading-[22px] md:leading-[26px] mt-2">
+                                  Upload an Existing Assessment in Word or PDF format, or Describe
+                                  Your Assessment by answering questions about the subject,
+                                  learning outcomes, and year level.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-full mt-7 md:mt-12 flex flex-col lg:flex-row justify-center lg:justify-normal items-center lg:items-start gap-3 xl:gap-10">
+                            <div class="w-[72px] h-[72px] rounded-full glow-animation">
+                              <img class="w-full h-full" src="images/FeatureIconwithcircleTwo.svg" alt="assesttwo" />
+                            </div>
+                            <div class="text-center lg:text-start text-gray-900 lg:w-[calc(100%-72px)]">
+                              <h5 class="text-xl sm:text-2xl font-semibold leading-5 sm:leading-8">
+                                AI-Powered Transformation
+                              </h5>
+                              <p class="text-sm sm:text-base font-normal leading-[22px] sm:leading-[26px] mt-2">
+                                The AI model, trained on TEQSA guidelines, Higher Education
+                                Standards Framework, and leading literature in assessment
+                                design, analyses your input to reform your assessment.
+                              </p>
+                            </div>
+                        </div>
+                        <div class="w-full mt-7 md:mt-12 flex flex-col lg:flex-row justify-center lg:justify-normal items-center lg:items-start gap-3 xl:gap-10">
+                            <div class="w-[72px] h-[72px] rounded-full glow-animation">
+                              <img
+                                class="w-full h-full"
+                                src="images/FeatureIconThree.svg"
+                                alt="assesthree"
+                              />
+                            </div>
+                            <div class="text-center lg:text-start text-gray-900 lg:w-[calc(100%-72px)]">
+                              <h5 class="text-xl sm:text-2xl font-semibold leading-[22px] sm:leading-8">
+                                Choose Your Path
+                              </h5>
+                              <p class="text-sm sm:text-base font-normal leading-5 sm:leading-[26px] mt-2">
+                                Presenting two assessments for your chosen AQF level, both
+                                aligning with the same outcomes
+                              </p>
+                              <p class="text-sm sm:text-base font-normal leading-5 sm:leading-[26px] mt-2">
+                                Human-Centric Assessment: Emphasizes critical thinking,
+                                creativity, and communication skills, difficult for AI to
+                                replicate.
+                              </p>
+                              <p class="text-sm sm:text-base font-normal leading-5 sm:leading-[26px] mt-2">
+                                Encourages ethical AI use, providing safety guidelines and
+                                enhancing learning outcomes.
+                              </p>
+                            </div>
+                        </div>
+                        <div class="w-full mt-7 md:mt-12 flex flex-col lg:flex-row justify-center lg:justify-normal items-center lg:items-start gap-3 xl:gap-10">
+                            <div class="w-[72px] h-[72px] rounded-full glow-animation">
+                              <img class="w-full h-full" src="images/FeatureIconwithcircleTwo.svg" alt="assesttwo" />
+                            </div>
+                            <div class="text-center lg:text-start text-gray-900 lg:w-[calc(100%-72px)]">
+                              <h5 class="text-xl sm:text-2xl font-semibold leading-5 sm:leading-8">
+                                Review, Customise, and Implement
+                              </h5>
+                              <p class="text-sm sm:text-base font-normal leading-[22px] sm:leading-[26px] mt-2">
+                                Marking Rubric Provided: Each option includes a specific rubric
+                                tailored to its assessment type.
+                              </p>
+                              <p class="text-sm sm:text-base font-normal leading-[22px] sm:leading-[26px] mt-2">
+                                Customisation: Easily adjust the assessment and rubric to fit
+                                your course requirements.
+                              </p>
+                              <p class="text-sm sm:text-base font-normal leading-[22px] sm:leading-[26px] mt-2">
+                                Satisfaction Guarantee: Not satisfied? Request another option
+                                until it meets your expectations.
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full max-w-[450px] lg:h-[420px] mx-auto md:mx-0 md:max-w-[442px] lg:max-w-[540px] flex justify-center md:justify-start mt-14 md:mt-0 relative bounce-animation">
+                        <img class="w-full h-auto" src="images/Phone-Mockup.png" alt="laptop" />
+                        <img
+                          class="absolute sm:w-[105px] xxs:w-24 w-20 lg:top-14 xs:top-10 xxs:top-8 top-6 xl:right-24 lg:right-[84px] sm:right-[76px] xs:right-[72px] xxs:right-[60px] right-12"
+                          src="images/createwith.gif"
+                          alt="CreatWithAI"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section class="max-w-6xl w-full mx-auto px-4 sm:py-8 py-6 overflow-hidden">
+                <div class="max-w-2xl mx-auto text-center text-gray-900">
+                  <h2 class="lg:text-5xl tracking-[0.5px] sm:text-3xl text-2xl text-gray-900 !leading-[133.33%] font-extrabold text-center">
+                    Features and Benefits of AssessMate
+                  </h2>
+                  <p class="text-lg leading-8 mt-2">
+                    AssessMate revolutionizes data comprehension with streamlined
+                    assessments, customizable features, and intuitive reporting for
+                    improved results.
+                  </p>
+                </div>
+                <div class="mt-12 grid text-gray-900 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-x-8 lg:gap-y-12 gap-10 sm:px-6">
+                  <div class="text-center max-w-[420px] mx-auto">
+                    <img
+                      src="images/approach_1.svg"
+                      alt="featureone"
+                      class="mx-auto w-8 h-8 glow-animation"
+                    />
+                    <h5 class="text-2xl md:leading-8 leading-6 font-semibold mb-2 mt-6 md:h-16 sm:h-12 bottom-animation">
+                      Intelligent AI Analysis
+                    </h5>
+                    <p class="text-base leading-[1.625em] bottom-animation">
+                      Feature: Employs a cutting-edge AI model trained on TEQSA
+                      guidelines, Higher Education Standards Framework, and assessment
+                      Benefit: Ensures assessment reforms uphold top educational
+                      standards, empowering educators to create innovative, accredited
+                      assessments with integrity.
+                    </p>
+                  </div>
+                  <div class="text-center max-w-[420px] mx-auto">
+                    <img
+                      src="images/FeaturesTwo.png"
+                      alt="featuretwo"
+                      class="mx-auto w-8 h-8 glow-animation"
+                    />
+                    <h5 class="text-2xl md:leading-8 leading-6 font-semibold mb-2 mt-6 md:h-16 sm:h-12 bottom-animation">
+                      Dual Assessment Pathways
+                    </h5>
+                    <p class="text-base leading-[1.625em] bottom-animation">
+                      Feature: Offers two transformative pathways for existing
+                      Benefit: Empowers educators to prioritize cultivating invaluable
+                      human skills or seamlessly integrating AI into learning, addressing
+                      varied educational goals and student requirements..
+                    </p>
+                  </div>
+                  <div class="text-center max-w-[420px] mx-auto">
+                    <img
+                      src="images/approach_2.svg"
+                      alt="featurethird"
+                      class="mx-auto w-8 h-8 glow-animation"
+                    />
+                    <h5 class="text-2xl md:leading-8 leading-6 font-semibold mb-2 mt-6 md:h-16 sm:h-12 bottom-animation">
+                      Customizable Marking Rubrics
+                    </h5>
+                    <p class="text-base leading-[1.625em] bottom-animation">
+                      Feature: Automatically generates tailored marking rubrics for each
+                      assessment suggestion.
+                      Benefit: Saves time and enhances the assessment process by providing
+                      clear, criteria-based evaluation tools that align with the
+                      transformed assessment's goals.
+                    </p>
+                  </div>
+                  <div class="text-center max-w-[420px] mx-auto">
+                    <img
+                      src="images/FeaturesFourth.png"
+                      alt="featurefourth"
+                      class="mx-auto w-8 h-8 glow-animation"
+                    />
+                    <h5 class="text-2xl md:leading-8 leading-6 font-semibold mb-2 mt-6 md:h-16 sm:h-12 bottom-animation">
+                      Iterative Refinement Process
+                    </h5>
+                    <p class="text-base leading-[1.625em] bottom-animation">
+                      Feature: Allows for unlimited revisions and suggestions until the
+                      perfect assessment design is achieved.
+                      Benefit: Guarantees satisfaction and alignment with course
+                      objectives, ensuring educators have a tool that precisely meets
+                      their needs without compromise.
+                    </p>
+                  </div>
+                  <div class="text-center max-w-[420px] mx-auto">
+                    <img
+                      src="images/FeatureFifth.png"
+                      alt="featurefifth"
+                      class="mx-auto w-8 h-8 glow-animation"
+                    />
+                    <h5 class="text-2xl md:leading-8 leading-6 font-semibold mb-2 mt-6 md:h-16 sm:h-12 bottom-animation">
+                      Programmatic Assessment Planning
+                    </h5>
+                    <p class="text-base leading-[1.625em] bottom-animation">
+                      Feature: Specialized functionality for designing comprehensive,
+                      program-wide assessment strategies.
+                      Benefit: Aids academic leaders in crafting cohesive, progressive
+                      assessment plans aligned with program goals, blending human-centric
+                      and AI-assisted methods effectively.
+                    </p>
+                  </div>
+                  <div class="text-center max-w-[420px] mx-auto">
+                    <img
+                      src="images/approach_3.svg"
+                      alt="featuresixth"
+                      class="mx-auto w-8 h-8 glow-animation"
+                    />
+                    <h5 class="text-2xl md:leading-8 leading-6 font-semibold mb-2 mt-6 md:h-16 sm:h-12 bottom-animation">
+                      User-Friendly Interface
+                    </h5>
+                    <p class="text-base leading-[1.625em] bottom-animation">
+                      Feature: Designed with a straightforward, intuitive interface for
+                      ease of use.
+                      Benefit: Reduces the learning curve and implementation time,
+                      allowing educators and administrators to focus more on teaching and
+                      less on navigating complex software.
+                    </p>
+                  </div>
+                </div>
+            </section>
+            <section class="w-full md:mb-0.5">
+                <div class="max-w-[1440px] mx-auto">
+                    <div class="">
+                        <img class="w-full h-auto" src="images/Headiline-cover-Image.png" >
+                    </div>
+                    <div class="z-20 lg:p-16 md:p-8 p-4 lg:max-w-[540px] md:max-w-[420px] md:ml-auto lg:mr-[160px] md:mr-24 md:-mt-[198px] w-full bg-white text-gray-900 bottom-animation">
+                        <h3 class="lg:text-[40px] md:text-3xl text-2xl font-extrabold !leading-[135%] text-[#1C2C40]">
+                            The AssessMate Solution
+                        </h3>
+                        <p class="mt-4 md:text-lg text-base md:leading-8">
+                            AssessMate democratises the process of assessment reform,
+                            providing every educator with an evidence-based method to
+                            transform traditional assessments into models that are fit for the
+                            demands of the modern world and the generative AI era.
+                        </p>
+                        <div class="mt-10 flex gap-10 text-[#8C30F5] sm:text-base text-sm font-medium items-center">
+                            <a href="/" class="cursor-pointer">
+                            All in a single click.
+                            </a>
+                            <a
+                            href="/demo-details"
+                            class="flex items-center gap-2 cursor-pointer"
+                            >
+                            <img src="images/Path.svg" alt="WatchVideo" />
+                            <p>Watch video</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                style="background-image: url(images/newsLatterBg.png);"
+                class="md:rounded-2xl max-w-6xl px-5 bg-cover bg-no-repeat bg-center w-full sm:mb-16 mb-12 mx-auto overflow-hidden z-30"
+            >
+                <div class=" md:p-12 sm:p-6 py-3 flex md:flex-nowrap flex-wrap items-center md:gap-10 gap-8 justify-center">
+                <div class="md:w-1/4 w-full flex md:justify-start justify-center">
+                    <img
+                    src="images/mail-Image.png"
+                    alt="customer"
+                    class="md:w-52"
+                    />
+                </div>
+                <div class=" w-full md:max-w-auto max-w-[445px]">
+                    <h2 class="text-white sm:text-4xl text-2xl md:text-[40px] font-extrabold !leading-[135%] md:text-left text-center">
+                    Join 569 more people in the waitlist
+                    </h2>
+                    <form
+                    action=""
+                    class="mt-8 flex items-center md:justify-start justify-center w-full flex-wrap sm:gap-0 gap-4"
+                    >
+                    <input
+                        type="email"
+                        placeholder="Your work email address"
+                        class="placeholder:text-[#474A57] h-[52px] sm:rounded-l-md rounded-md sm:rounded-none sm:max-w-[248px] sm:w-auto w-full px-4 py-[14px] focus:outline-none"
+                    />
+                    <a
+                    href="/creation-ai"
+                    class="flex justify-center items-center bg-black text-white hover:text-white h-[52px] text-sm font-medium px-4 sm:rounded-r-md rounded-md sm:rounded-none border-none sm:w-[155px] w-full focus:outline-none"
+                    >
+                        Join the waitlist
+                    </a>
+                    </form>
+                </div>
+                </div>
+            </section>
+            <section class="max-w-6xl w-full mx-auto px-4 sm:pb-16 pb-12 gap-8 flex lg:flex-nowrap flex-wrap lg:justify-start justify-center items-center overflow-hidden">
+                <div class="w-full max-w-[540px] bg-[#D5FAFC] rounded-full">
+                  <img class="w-full h-full" src="images/consultant.png" alt="image" />
+                </div>
+                <div class="lg:w-[calc(100%-540px)] lg:max-w-full sm:max-w-2xl max-w-md lg:text-start text-center xl:px-12 sm:px-8">
+                  <p class="text-sm font-bold uppercase text-[#2EC5CE] leading-4 sm:leading-[18px] tracking-[1px]">
+                    Consultant
+                  </p>
+                  <h4 class="tracking-[0.5px] sm:text-3xl text-xl text-gray-900 !leading-[133.33%] font-extrabold mt-4 md:mt-2">
+                    Meet Our Expert Consultants at AssessMate
+                  </h4>
+                  <p class="text-base sm:text-lg text-gray-900 sm:leading-8 sm:mt-8 mt-6">
+                    Our experienced consultants are committed to delivering tailored
+                    solutions for your business needs. From strategic planning to
+                    implementation, we're here to guide you towards success. Let's achieve
+                    greatness together!
+                  </p>
+                  <a
+                    class="flex items-center gap-2 sm:mt-8 mt-6 lg:justify-start justify-center cursor-pointer"
+                    href="/contact"
+                  >
+                    <p class="text-base font-medium text-[#8C30F5]">Get Started</p>
+                    <img src="images/arrow.svg" alt="icon" class="relative top-[1px]" />
+                  </a>
+                </div>
+            </section>
+            <footer class="bg-[#0B0D17] w-full">
+            <div class="max-w-6xl mx-auto px-5 pt-12 flex flex-col justify-center items-center">
+                <a href="/" class="flex items-center cursor-pointer">
+                <img src="images/Logo.png" alt="logo" class="rotate"/>
+                <p class="ml-[6px] text-white font-extrabold text-xl leading-[109.30%]">
+                    AssessMate
+                </p>
+                </a>
+                <ul class="sm:flex block text-base text-white items-center mt-[19px]">
+                <li class="lg:p-4 sm:p-3 px-2 text-center">
+                    <a
+                    href="/about"
+                    class="cursor-pointer text-white "
+                    >
+                    About
+                    </a>
+                </li>
+                <li class="lg:p-4 sm:p-3 px-2 text-center">
+                    <a
+                    href="/demo-details"
+                    class="cursor-pointer text-white "
+                    >
+                    Demo Details
+                    </a>
+                </li>
+                <li class="lg:p-4 sm:p-3 p-2 text-center ">
+                    <a
+                    href="/features"
+                    class="cursor-pointer text-white"
+                    >
+                    Feature
+                    </a>
+                </li>
+                <li class="lg:p-4 sm:p-3 p-2 text-center">
+                    <a
+                    href="/pricing"
+                    class="cursor-pointer text-white"
+                    >
+                    Pricing
+                    </a>
+                </li>
+                <li class="lg:p-4 sm:p-3 p-2 text-center">
+                    <a
+                    href="/career"
+                    class="cursor-pointer text-white"
+                    >
+                    Career
+                    </a>
+                </li>
+                <li class="lg:p-4 sm:p-3 p-2 text-center">
+                    <a
+                    href="/faqs"
+                    class="cursor-pointer text-white"
+                    >
+                    FAQs
+                    </a>
+                </li>
+                <li class="lg:p-4 sm:p-3 p-2 text-center">
+                    <a
+                    href="/privacypolicy"
+                    class="cursor-pointer text-white"
+                    >
+                    Privacy Policy
+                    </a>
+                </li>
+                </ul>
+                <div class="sm:mt-8 mt-6 ">
+                <img src="images/Divider.png" alt="divider" />
+                </div>
+                <div class="py-6 w-full flex items-center sm:justify-between justify-center gap-5 sm:flex-nowrap flex-wrap">
+                <p class="text-sm text-gray-300 leading-6">
+                    © 2024 AccessMate. All rights reserved
+                </p>
+                <div class="flex gap-4 items-center">
+                    <a
+                    href="javascript:void(0)"
+                    class="h-6 w-6 flex justify-center items-center hover:scale-110 transition duration-500 ease-linear hover:linnerBg"
+                    >
+                    <img src="images/Instagram.png" alt="insta" />
+                    </a>
+                    <a
+                    href="javascript:void(0)"
+                    class="h-6 w-6 flex justify-center items-center hover:scale-110 transition duration-500 ease-linear"
+                    >
+                    <img src="images/website.png" alt="Web" />
+                    </a>
+                    <a
+                    href="javascript:void(0)"
+                    class="h-6 w-6 flex justify-center items-center hover:scale-110 transition duration-500 ease-linear"
+                    >
+                    <img src="images/tweeter.png" alt="Twitter" />
+                    </a>
+                    <a
+                    href="javascript:void(0)"
+                    class="h-6 w-6 flex justify-center items-center hover:scale-110 transition duration-500 ease-linear"
+                    >
+                    <img src="images/youTube.png" alt="Youtube" />
+                    </a>
+                </div>
+                </div>
+            </div>
+            </footer>
+        </div>
+        
+        <script>
+            function sideBar() {
+                var element = document.getElementById("default-sidebar");
+                element.classList.add("open");
+
+                var element = document.getElementById("overlay");
+                element.classList.add("open");
+            }
+
+            function sideBarClose() {
+                var element = document.getElementById("default-sidebar");
+                element.classList.remove("open");
+
+                var element = document.getElementById("overlay");
+                element.classList.remove("open");
+            }
+
+            const eventListener = (className) => {
+                const element = document.querySelectorAll(`${className}`);
+                for (var i = 0; i < element.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = element[i].getBoundingClientRect().top;
+                    var elementVisible = 400;
+                    if (elementTop < windowHeight - elementVisible) {
+                    element[i].classList.add("active");
+                    } else {
+                    element[i].classList.remove("active");
+                    }
+                }
+                };
+
+                window.addEventListener("scroll", () => {
+                eventListener(".bottom-animation");
+                });
+
+                window.addEventListener("scroll", () => {
+                eventListener(".right-animation");
+                });
+        </script>
+    </body>
+</html>

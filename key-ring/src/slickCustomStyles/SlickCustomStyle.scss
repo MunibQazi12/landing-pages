@@ -1,0 +1,196 @@
+.fadeBg {
+    background-image: url(../images/collab@2x.jpg);
+    height: 634px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent linear-gradient(85deg, #3F63A6 0%, #621C56 100%) 0% 0% no-repeat padding-box;
+        opacity: 0.7;
+    }
+}
+
+.fade {
+    .slick-dots {
+        bottom: 24px;
+
+        li {
+            button {
+                background: transparent;
+                border: none;
+                font-size: 20px;
+                cursor: pointer;
+                outline: 1px solid white;
+                border-radius: 50%;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        .slick-active {
+            background-color: #fff;
+            border-radius: 50%;
+        }
+    }
+
+    .slick-slide {
+        img {
+            width: 100%;
+            height: 634px;
+        }
+    }
+}
+
+.fade .slick-dots li.slick-active button:before {
+    color: white;
+}
+
+.slick-prev {
+    left: 50px;
+    z-index: 9999;
+    transform: rotate(-134deg);
+}
+
+.slick-next {
+    right: 50px;
+    z-index: 9999;
+    transform: rotate(40deg);
+}
+
+.slick-prev,
+.slick-next {
+    width: 45px;
+    height: 45px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-width: 0.7vmin 0.7vmin 0 0;
+    border-style: solid;
+    border-color: #fff;
+    transition: 0.2s ease;
+    display: block;
+    transform-origin: 100% 0;
+}
+
+.slick-prev:after,
+.slick-next::after {
+    content: "";
+    float: left;
+    position: relative;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    border-width: 0 0.7vmin 0 0;
+    border-style: solid;
+    border-color: #fff;
+    transform-origin: 100% 0;
+}
+
+.compniessLogo .slick-prev::after,
+.compniessLogo .slick-prev::before,
+.compniessLogo .slick-next::after,
+.compniessLogo .slick-next::before {
+    border-color: #000;
+}
+
+.compniessLogo .slick-prev {
+    left: 20px;
+    top: 30%;
+}
+
+.compniessLogo .slick-next {
+    right: 20px;
+    top: 30%;
+}
+
+.compniessLogo .slick-prev,
+.compniessLogo .slick-next {
+    width: 45px;
+    height: 45px;
+}
+
+.ReviewSlider .slick-prev,
+.ReviewSlider .slick-next {
+    width: 27px;
+    height: 27px;
+    top: 41%;
+}
+
+.ReviewSlider .slick-prev::after,
+.ReviewSlider .slick-prev::before,
+.ReviewSlider .slick-next::after,
+.ReviewSlider .slick-next::before {
+    border-color: #3F63A6;
+}
+
+.ReviewSlider .slick-prev {
+    left: 23px;
+}
+
+.ReviewSlider .slick-next {
+    right: 23px;
+}
+
+.ReviewSlider .slick-dots {
+    bottom: 6px;
+}
+
+.ReviewSlider .slick-dots li button:before {
+    font-size: 16px;
+    color: #3E63A8;
+    opacity: 0.5;
+}
+
+.ReviewSlider .slick-dots li.slick-active button:before {
+    color: #3E63A8;
+    opacity: 1;
+}
+
+.compniessLogo .slick-list.draggable {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#open-button .solutionDropdown {
+    max-width: 276px;
+}
+
+.open--on#open-button .solutionDropdown {
+    display: block;
+}
+
+.ammetSlider {
+    max-width: 973px !important;
+    height: 538px !important;
+    .ReviewSliderContainer {
+        max-width: 973px !important;
+        left: -540px !important;
+    }
+    .slick-prev {
+        left: -43px ;
+    }
+    .slick-next {
+        right: -43px ;
+    }
+    .slick-dots {
+        bottom: -34px;
+    }
+    .slick-dots li button:before {
+        width: 16px;
+        height: 16px;
+        font-size: 14px;
+    }
+}

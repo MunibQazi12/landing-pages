@@ -1,0 +1,284 @@
+.font-inter {
+    font-family: "Inter", sans-serif;
+}
+
+.sidebar-animation {
+  left: -280px;
+  transition: 0.7s all;
+}
+
+.navbarBackdrop {
+  background: linear-gradient(
+    112deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 101.12%
+  );
+  backdrop-filter: blur(21px);
+}
+
+input[type="file"]::file-selector-button {
+  display: none;
+}
+
+input[type="file"]::label {
+  display: none;
+}
+
+#progressBar {
+  background: blue;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.rotate-vertical {
+  animation: vertical-rotation 10s infinite linear;
+}
+@keyframes vertical-rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(359deg);
+  }
+}
+
+.glow-animation {
+  animation: glow 2s infinite linear;
+}
+@keyframes glow {
+  0% {
+    scale: 0.9;
+  }
+  50% {
+    scale: 1.0;
+  }
+  100% {
+    scale: 0.9;
+  }
+}
+
+.glow-animation_2 {
+  animation: glow_2 2s infinite linear;
+}
+@keyframes glow_2 {
+  0% {
+    scale: 1.0;
+  }
+  50% {
+    scale: 0.9;
+  }
+  100% {
+    scale: 1.0;
+  }
+}
+
+.bottom-animation {
+  /* position: relative;
+  opacity: 0.1;
+  transform: translateY(100px);
+  transition: 0.5s all ease; */
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.bottom-animation.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.right-animation {
+  position: relative;
+  transform: translateX(20%);
+  opacity: 0;
+  transition-delay: 0.4;
+  transition: 1s all ease;
+}
+.right-animation.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.left-animation {
+  position: relative;
+  transform: translateX(-20%);
+  opacity: 0;
+  transition-delay: 0.4;
+  transition: 1s all ease;
+}
+.left-animation.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.bounce-animation {
+  position: relative;
+  animation: bounce 2s infinite linear;
+}
+@keyframes bounce {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.zoomIn {
+  opacity: 0;
+  -webkit-transform: scale3d(0.3, 0.3, 0.3);
+  transform: scale3d(0.3, 0.3, 0.3);
+  transition-delay: 0.4;
+  transition: 1s all ease;
+}
+.zoomIn.active {
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+}
+.ZoomInDefault {
+  animation: zoomIn 1s ease;
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+
+  to {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+.swing {
+  animation-name: swing 1s ease;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #535bf2;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+  
+  button {
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: #646cff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
+.linnerBg {
+    background: linear-gradient(
+        135deg,
+        #ffae47 10.78%,
+        #e97fb6 36.46%,
+        #b36fcf 58.59%,
+        #8261e8 76.74%,
+        #8060e9 77.63%,
+        #1492cc 95.78%
+      ),
+      #8c30f5;
+  }
+
+  .bounce-animation {
+    position: relative;
+    animation: bounce 2s infinite linear;
+  }
+  @keyframes bounce {
+    0% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 20px;
+    }
+    100% {
+      bottom: 0;
+    }
+  }
+
+  #default-sidebar.open {
+    left: 0;
+    transition: 0.7s all;
+  }
+
+  #overlay.open {
+    display: block;
+  }

@@ -105,6 +105,7 @@ header {
 	align-items: center;
 	height: 140px;
 	box-shadow: 0px 7px 16px 7px rgba(0, 0, 0, 0.03);
+	font-family: 'Roboto', sans-serif;
 }
 
 .ilm-features .feature-content {
@@ -120,6 +121,7 @@ header {
 
 .digital-age {
 	padding: 80px 0 40px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .digital-age .digital-top {
@@ -198,6 +200,7 @@ header {
 .help-you-learn {
 	max-width: 980px;
 	padding-bottom: 83px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .help-you-learn .help-top h2 {
@@ -334,6 +337,7 @@ header {
 	background-image: url(../images/spend-money-bg.png);
 	background-repeat: no-repeat;
 	background-position: center;
+	font-family: 'Roboto', sans-serif;
 }
 
 .spend-money .spend-money-top {
