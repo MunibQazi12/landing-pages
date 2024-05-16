@@ -1,0 +1,281 @@
+.LogoAnimation {
+  opacity: 0;
+  animation-name: LogoAnimate;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+@keyframes LogoAnimate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.CenterBar,
+.BookYourCall {
+  opacity: 0;
+  animation-name: HamBurgerAnimate;
+  animation-duration: 1s;
+  animation-delay: 0.75s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+@keyframes HamBurgerAnimate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade {
+  margin-top: 162px;
+  opacity: 0;
+  animation-name: FadeContainer;
+  animation-duration: 0.8s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+.fade .slick-dots li button:hover,
+.fade .slick-dots li button:focus {
+  animation: dotPluse 1s;
+  box-shadow: 0 0 0 0.4em transparent;
+}
+@keyframes dotPluse {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+.fade .learnMoreBtn:hover,
+.fade .subscribeBtn:hover {
+  animation: learnMore 1s;
+  box-shadow: 0 0 0 0.5em transparent;
+}
+@keyframes learnMore {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+@keyframes FadeContainer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.BottomAnimation {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.BottomAnimation.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.bookYourCallYellow:hover,
+.bookYourCallYellow:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 1em transparent;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #EEC400;
+  }
+}
+.ReviewSlider .slick-dots li button:hover, .ReviewSlider .slick-dots li button:focus, .ammetSlider .slick-dots li button:hover, .ammetSlider .slick-dots li button:focus {
+  animation: blueDots 1s;
+  box-shadow: 0 0 0 0.4em transparent;
+}
+
+@keyframes blueDots {
+  0% {
+    box-shadow: 0 0 0 0 #000;
+  }
+}
+/* .communityConversation:hover {
+  animation: cardBg 0.5s;
+  background-image: linear-gradient(44deg, #3E63A8 0%, #602255 100%);
+}
+@keyframes cardBg {
+  0% {
+    background-image: none;
+  }
+  100% {
+    background-image: linear-gradient(44deg, #3E63A8 0%, #602255 100%);
+  }
+} */
+
+.LeftAnimation {
+  position: relative;
+  transform: translateX(8.49%);
+  opacity: 0;
+  transition-delay: 0.4;
+  transition: 1s all ease;
+}
+
+.LeftAnimation.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.MainBannerLeftAnimation {
+  position: relative;
+  transform: translateX(55%);
+  opacity: 0;
+  animation-name: trans;
+  animation-duration: 1.2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  transition-property: transform;
+}
+@keyframes trans {
+  0% {
+    transform: translateX(55%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.RightAnimation {
+  position: relative;
+  transform: translateX(-8.49%);
+  opacity: 0;
+  transition-delay: 0.4;
+  transition: 1s all ease;
+}
+
+.RightAnimation.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0%;
+  z-index: 999999999;
+  background: #fff;
+}
+
+.rotateAinimation .FaviconImg {
+  animation: rotate 1.2s;
+  rotate: 0deg;
+}
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.footerLogoRotate {
+  position: relative;
+  transition-delay: 0.4;
+  rotate: 0deg;
+  transition: 1s all ease;
+}
+
+.footerLogoRotate.active {
+  rotate: 360deg;
+}
+
+/* 16 */
+.btn-16::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.6), -4px -4px 5px 0px rgba(255, 255, 255, 0.6), 7px 7px 20px 0px rgba(0, 0, 0, 0.1333333333), 4px 4px 5px 0px rgba(0, 0, 0, 0.0666666667);
+  transition: all 0.3s ease;
+  border-radius: 42px;
+}
+.btn-16:hover::after {
+  left: auto;
+  right: 0;
+  width: 100%;
+  border-radius: 42px;
+}
+
+.fadeInBottom {
+  animation-name: fadeInBottom;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeInLeft {
+  animation-name: fadeInLeft;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeInRight {
+  animation-name: fadeInRight;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40%);
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=animation.css.map */
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+@keyframes fadeIn {
+  from {
+    transform: scale3d(0.3 0.3 0.3);
+    opacity: 0.3;
+  }
+  to{
+    transform: scale3d(1 1 1);
+    opacity: 1;
+  }
+}

@@ -22,8 +22,8 @@
 }
 
 .img-banner-bg {
-	background-image: url(../images/banner-bg.jpg);
-	background-position-x: 700px;
+	background-image: url(../src/images/banner-bg.jpg);
+	background-position-x: 48.6vw;
 	background-position-y: 0px; 
 }
 
@@ -51,9 +51,9 @@
 }
 
 @media (max-width: 1023px) {
-	.img-banner-bg {
+	/* .img-banner-bg {
 		background-position-x: 550px;
-	}
+	} */
 }
 .btn-animation{
 	transition: 0.5s transform linear;
@@ -84,24 +84,28 @@
 .left-animation{
 	position: relative;
 	z-index: -99;
-	transform: translateX(-1200px);
-	transition: 2s all ease;
+	transform: translateX(-150px);
+	transition: 1s all ease;
 	transition-timing-function: ease-in-out;
+	opacity: 0;
 }
 .left-animation.active{
 	transform: translateX(0);
 	z-index: 99;
+	opacity: 1;
 }
 .right-animation{
 	position: relative;
 	z-index: -99;
-	transform: translateX(1500px);
-	transition: 2s all ease;
+	transform: translateX(150px);
+	transition: 1s all ease;
 	transition-timing-function: ease-in-out;
+	opacity: 0;
 }
 .right-animation.active{
 	transform: translateX(0);
 	z-index: 99;
+	opacity: 1;
 }
 /* @keyframes headings{
 	0%{transform:rotate(0deg);}
