@@ -31,33 +31,27 @@
             <div class="md:flex CenterBar hidden">
                 <ul class="flex items-center">
                     <li class="md:mr-5 lg:mr-11">
-                        <a href="#/"
-                            class="text-black lg:text-2xl md:text-lg">About</a>
+                        <a href="#/" class="text-black lg:text-2xl md:text-lg">About</a>
                     </li>
                     <li class="lg:mr-11 md:mr-5" id="open-button" onclick="handleButtonClick()">
-                        <a href="#/"
-                            class="text-black lg:text-2xl md:text-lg">Solutions</a>
-                        <ul
-                            class="text-white lg:pl-9 md:pl-5 w-full -ml-9 lg:text-themeTwentyEightSize md:text-2xl py-7 absolute hidden rounded-3xl banner-gradient font-proximaNovaBold solutionDropdown">
+                        <a href="#/" class="text-black lg:text-2xl md:text-lg">Solutions</a>
+                        <ul class="text-white lg:pl-9 md:pl-5 w-full -ml-9 lg:text-themeTwentyEightSize md:text-2xl py-7 absolute hidden rounded-3xl banner-gradient font-proximaNovaBold solutionDropdown">
                             <li class="lg:leading-9 lg:mb-9 md:mb-5"><a href="#/">Offerings</a></li>
-                            <li class="lg:leading-9 lg:mb-9 md:mb-5"><a href="#/">Case Studies</a>
-                            </li>
+                            <li class="lg:leading-9 lg:mb-9 md:mb-5"><a href="#/">Case Studies</a></li>
                             <li class="lg:leading-9 lg:mb-9 md:mb-5"><a href="#/">Glossary</a></li>
                         </ul>
                     </li>
                     <li class="lg:mr-11 md:mr-5">
-                        <a href="#/"
-                            class="text-black lg:text-2xl md:text-lg">News</a>
+                        <a href="#/" class="text-black lg:text-2xl md:text-lg">News</a>
                     </li>
                     <li class="lg:mr-6 md:mr-2">
-                        <a href="#/"
-                            class="text-black lg:text-2xl md:text-lg">Contact</a>
+                        <a href="#/" class="text-black lg:text-2xl md:text-lg">Contact</a>
                     </li>
                 </ul>
             </div>
+
             <div class="flex gap-5 justify-end items-center lg:w-[297px] md:w-[200px] w-[260px] relative">
-                <button
-                    class="xl:text-3xl lg:text-2xl md:text-lg text-center BookYourCall bookCallBtn text-white xl:py-6 lg:py-5 py-4 font-proximaNovaBold btn-16 overflow-hidden relative">
+                <button class="xl:text-3xl lg:text-2xl md:text-lg text-center BookYourCall bookCallBtn text-white xl:py-6 lg:py-5 py-4 font-proximaNovaBold btn-16 overflow-hidden relative">
                     <span class="block w-full"> Book Your Call</span>
                 </button>
                 <div class="items-center md:hidden block">
@@ -65,198 +59,148 @@
                         <img src="images/moile_menu.svg" alt="Mobile_Menu" width="40px">
                     </a>
                 </div>
-                
             </div>
-            <div id="mobSideBar" class="md:hidden sideBar-mob rounded-md font-proximaNova text-white h-screen fixed top-0 -left-64 w-64"
-                    id="myLinks">
-                    <ul class="list-none">
-                        <li class="border-b border-white">
-                            <a href="about.html" class="text-lg block px-4 py-2 ">About</a>
-                        </li>
-                        <li class="border-b border-white" id="open-button" onclick="handleButtonClick()">
-                            <a href="./solution.html" class="text-lg block px-4 py-2 ">Solutions</a>
-                            <!-- <ul
-                                class="text-white lg:pl-9 md:pl-5 w-full -ml-9 lg:text-themeTwentyEightSize md:text-2xl py-7 absolute hidden rounded-3xl banner-gradient font-proximaNovaBold solutionDropdown">
-                                <li class="lg:leading-9 lg:mb-9 md:mb-5"><a href="solution.html">Offerings</a></li>
-                                <li class="lg:leading-9 lg:mb-9 md:mb-5"><a href="case-study-library.html">Case Studies</a>
-                                </li>
-                                <li class="lg:leading-9 lg:mb-9 md:mb-5"><a href="glossary.html">Glossary</a></li>
-                            </ul> -->
-                        </li>
-                        <li class="border-b border-white">
-                            <a href="news.html" class="text-lg block px-4 py-2 ">News</a>
-                        </li>
-                        <li class="border-b border-white">
-                            <a href="contact-us.html" class="text-lg block px-4 py-2 ">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="overlay" onclick="sideBarClose()" class="hidden"></div>
+
+            <div id="mobSideBar" class="md:hidden sideBar-mob rounded-md font-proximaNova text-white h-screen fixed top-0 -left-64 w-64" id="myLinks">
+                <ul class="list-none">
+                    <li class="border-b border-white">
+                        <a href="about.html" class="text-lg block px-4 py-2 ">About</a>
+                    </li>
+                    <li class="border-b border-white" id="open-button" onclick="handleButtonClick()">
+                        <a href="./solution.html" class="text-lg block px-4 py-2 ">Solutions</a>
+                    </li>
+                    <li class="border-b border-white">
+                        <a href="news.html" class="text-lg block px-4 py-2 ">News</a>
+                    </li>
+                    <li class="border-b border-white">
+                        <a href="contact-us.html" class="text-lg block px-4 py-2 ">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="overlay" onclick="sideBarClose()" class="hidden"></div>
         </div>
     </header>
     <!-- Header section ends -->
 
     <!-- Community Key Section Starts -->
     <div class="max-w-fourteenForty mx-auto md:mt-40 mt-28">
-        <h1
-            class="text-black sm:text-4xl text-xl	text-center max-w-5xl mx-auto leading-snug font-proximaNova sm:mb-12 mb-8 fadeInBottom px-3">
+        <h1 class="text-black sm:text-4xl text-xl	text-center max-w-5xl mx-auto leading-snug font-proximaNova sm:mb-12 mb-8 fadeInBottom px-3">
             Lead the transformation your organization needs.<br class="lg:block hidden"> I help you involve your
-            stakeholders to create a better future – together.</h1>
+            stakeholders to create a better future – together.
+        </h1>
         <div class="sm:flex block text-center justify-center fadeInBottom px-3">
-            <button
-                class="xl:text-3xl sm:text-2xl text-xl text-center text-white xl:py-6 py-4 px-[1.8906rem] rounded-[2.625rem] bg-primary font-proximaNovaMedium watchVideoIntro ease-in duration-300 hover:opacity-90 sm:mb-0 mb-4 responisveButton"><a
-                    href="solution.html">Watch
-                    Intro</a></button>
-            <button
-                class="xl:text-3xl sm:text-2xl text-xl text-center text-white xl:py-6 py-4 px-[1.906rem] rounded-[2.625rem] bg-mehroon sm:ml-9 font-proximaNovaMedium ease-in duration-300 hover:opacity-90 responisveButton"><a
-                    href="solution.html">Our Service Offerings</a></button>
+            <button class="xl:text-3xl sm:text-2xl text-xl text-center text-white xl:py-6 py-4 px-[1.8906rem] rounded-[2.625rem] bg-primary font-proximaNovaMedium watchVideoIntro ease-in duration-300 hover:opacity-90 sm:mb-0 mb-4 responisveButton">
+                <a href="solution.html">Watch Intro</a>
+            </button>
+            
+            <button class="xl:text-3xl sm:text-2xl text-xl text-center text-white xl:py-6 py-4 px-[1.906rem] rounded-[2.625rem] bg-mehroon sm:ml-9 font-proximaNovaMedium ease-in duration-300 hover:opacity-90 responisveButton">
+                <a href="solution.html">Our Service Offerings</a>
+            </button>
         </div>
     </div>
 
     <div class="lg:mt-24 sm:mt-12 mt-6 bg-communityConversationBg">
-        <div
-            class="lg:flex block max-w-5xl mx-auto px-5 pt-7 lg:h-[43rem] h-auto pb-7 lg:pb-0 justify-between sm:overflow-visible overflow-hidden">
+        <div class="lg:flex block max-w-5xl mx-auto px-5 pt-7 lg:h-[43rem] h-auto pb-7 lg:pb-0 justify-between sm:overflow-visible overflow-hidden">
             <div class="max-w-xl pr-5 text-primary lg:mx-0 mx-auto">
-                <h2 class="sm:text-4xl text-xl leading-snug font-black font-GilroyMedium">Community Conversations are
-                    the Key to Your Success</h2>
-                <p class="sm:text-xl text-base leading-7 mt-4 text-proxima BottomAnimation">Many high-stakes initiatives
-                    flounder, whether inside of a department/team, organization, community, or multi-stakeholder
-                    collaborative: </p>
+                <h2 class="sm:text-4xl text-xl leading-snug font-black font-GilroyMedium">Community Conversations are the Key to Your Success</h2>
+                <p class="sm:text-xl text-base leading-7 mt-4 text-proxima BottomAnimation">Many high-stakes initiatives flounder, whether inside of a department/team, organization, community, or multi-stakeholder collaborative: </p>
+                
                 <ul class="list-disc mt-6 sm:text-xl text-base leading-8 font-proximaNovaBold pl-5">
                     <li class="BottomAnimation">High energy start, then fizzle.</li>
                     <li class="BottomAnimation">Stakeholders feeling confused, dissatisfied, disenfranchised.</li>
-                    <li class="BottomAnimation">Discussions about diversity, equity, and inclusion that do more harm
-                        than good.</li>
+                    <li class="BottomAnimation">Discussions about diversity, equity, and inclusion that do more harm than good.</li>
                     <li class="BottomAnimation">Input is solicited without viable action, eroding trust</li>
                 </ul>
-                <p class="sm:text-xl text-base leading-7 mt-7 BottomAnimation">Don’t settle for lackluster gatherings
-                    that derail momentum and fail to result in meaningful change.</p>
-                <p class="sm:text-xl text-base leading-7 mt-7 BottomAnimation"><span class="font-bold">The missing
-                        element:</span> strategic <a href="#/"
-                        class="font-bold underline cursor-pointer">Community Conversations</a> that produce clarity and
-                    shared responsibility among relevant stakeholders.</p>
+
+                <p class="sm:text-xl text-base leading-7 mt-7 BottomAnimation">Don’t settle for lackluster gatherings that derail momentum and fail to result in meaningful change.</p>
+                <p class="sm:text-xl text-base leading-7 mt-7 BottomAnimation">
+                    <span class="font-bold">The missing element:</span> strategic <a href="#/" class="font-bold underline cursor-pointer">Community Conversations</a> that produce clarity and shared responsibility among relevant stakeholders.
+                </p>
             </div>
             <div class="max-w-md LeftAnimation lg:mx-0 mx-auto">
                 <div class="relative lg:-top-16 top-3">
                     <div class="py-8 px-5 community-gradient rounded-t-3xl font-proximaNova">
-                        <p class="text-base leading-10 text-white mb-4">Our Secret
-                            Ingredient? <span class="font-bold">Community Conversations.</span></p>
-                        <a href="#/"
-                            class="sm:text-2xl text-base leading-normal underline cursor-pointer text-white font-proximaNovaBold">Community
-                            Conversations </a>
-                        <p class="sm:text-2xl text-base leading-normal text-white mb-8 font-proximaNovaBold">unleash
-                            stakeholder energy for your initiative’s success.</p>
-                        <button
-                            class="bg-white rounded-[3.125rem] sm:max-w-twoEighty w-full text-semiPrimary text-center sm:py-4 py-3 font-proximaNovaMedium text-2xl ease-in duration-300 hover:opacity-90">
+                        <p class="text-base leading-10 text-white mb-4">Our Secret Ingredient? <span class="font-bold">Community Conversations.</span></p>
+                        <a href="#/" class="sm:text-2xl text-base leading-normal underline cursor-pointer text-white font-proximaNovaBold">Community Conversations </a>
+                        <p class="sm:text-2xl text-base leading-normal text-white mb-8 font-proximaNovaBold">unleash stakeholder energy for your initiative’s success.</p>
+                        <button class="bg-white rounded-[3.125rem] sm:max-w-twoEighty w-full text-semiPrimary text-center sm:py-4 py-3 font-proximaNovaMedium text-2xl ease-in duration-300 hover:opacity-90">
                             <a href="community-conservation.html" class="block">Learn More</a>
                         </button>
                     </div>
-                    <div style="background-image: url('images/communityConversation.jpg'); background-size: cover;"
-                        class="h-96 rounded-b-3xl community_bgImage"></div>
+                    <div style="background-image: url('images/communityConversation.jpg'); background-size: cover;" class="h-96 rounded-b-3xl community_bgImage"></div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Community Key Section Ends -->
 
-
-    <!-- Community Conversions Section Starts -->
-    <!-- <div class="w-full max-w-6xl mx-auto mt-16 pt-4 px-2 font-proxima font-bold">
-        <h2 class="sm:text-themeFortySize text-2xl text-center text-black leading-snug BottomAnimation">
-            For over a decade, we’ve helped leaders collaborate with the right people, at the right time, for for right the outcomes:
-        </h2>
-        <p class="mt-6 w-full sm:text-2xl text-lg text-center text-semiPrimary BottomAnimation">
-            All of our services are grounded in our proprietary <a href= "community-conservation.html" class="underline"> Community Conversations</a> methodology.
-        </p>
-    </div> -->
-
-    <div class="px-5 ">
+    <div class="px-5">
         <div class="w-full mx-auto bg-cardCommunityBg communityConversationCard pb-7 px-1">
             <h3 class=" font-GilroyBold sm:text-4xl text-2xl text-center text-primary w-full max-w-xl mx-auto">
                 Community Conversations
             </h3>
             <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-4 px-2.5">
                 <div class="w-full mx-auto communityConversationContainer transition-all cursor-pointer BottomAnimation mt-8">
-                    <div
-                        class="overflow-hidden relative group mx-auto w-full communityConversation bg-white flex flex-col justify-center items-center px-2 h-[334px] rounded-[33px]">
-                        <p
-                            class="group-hover:text-white text-2xl font-proxima font-proxima font-bold text-center text-primary z-30 relative transition ease-in-out duration-300">
+                    <div class="overflow-hidden relative group mx-auto w-full communityConversation bg-white flex flex-col justify-center items-center px-2 h-[334px] rounded-[33px]">
+                        <p class="group-hover:text-white text-2xl font-proxima font-proxima font-bold text-center text-primary z-30 relative transition ease-in-out duration-300">
                             Roadmaps: Initiative Strategy & Stakeholder Engagement
                         </p>
-                        <button
-                            class="h-0 opacity-0 mt-4 group-hover:h-[60px] group-hover:opacity-100 flex justify-center items-center cursor-pointer w-full mx-auto exploreTheService bg-white text-semiPrimary max-w-[288px] rounded-[33px] text-[27px] z-30">
+                        <button class="h-0 opacity-0 mt-4 group-hover:h-[60px] group-hover:opacity-100 flex justify-center items-center cursor-pointer w-full mx-auto exploreTheService bg-white text-semiPrimary max-w-[288px] rounded-[33px] text-[27px] z-30">
                             <span>Explore the Service</span>
                         </button>
                     </div>
                 </div>
+                
                 <div class="w-full mx-auto communityConversationContainer transition-all cursor-pointer BottomAnimation mt-8">
-                    <div
-                        class="overflow-hidden relative group mx-auto w-full communityConversation bg-white flex flex-col justify-center items-center px-2 h-[334px] rounded-[33px]">
-                        <p
-                            class="group-hover:text-white text-2xl font-proxima font-proxima font-bold text-center text-primary z-30 relative transition ease-in-out duration-300">
-                            DEI Change
-                        </p>
+                    <div class="overflow-hidden relative group mx-auto w-full communityConversation bg-white flex flex-col justify-center items-center px-2 h-[334px] rounded-[33px]">
+                        <p class="group-hover:text-white text-2xl font-proxima font-proxima font-bold text-center text-primary z-30 relative transition ease-in-out duration-300">DEI Change</p>
 
-                        <p
-                            class=" group-hover:text-white flex justify-center items-center font-proxima text-primary sm:text-xl text-lg text-center w-full z-30">
-                            Get help with facilitating outcome-focused events with real-time technology feedback to help
-                            your organization and community move forward – together
-                        </p>
+                        <p class="group-hover:text-white flex justify-center items-center font-proxima text-primary sm:text-xl text-lg text-center w-full z-30">Get help with facilitating outcome-focused events with real-time technology feedback to help
+                            your organization and community move forward – together</p>
 
-                        <button
-                            class="h-0 opacity-0 mt-4 group-hover:h-[60px] group-hover:opacity-100 flex justify-center items-center cursor-pointer w-full mx-auto exploreTheService bg-white text-semiPrimary max-w-[288px] rounded-[33px] text-[27px] z-30 z-30">
+                        <button class="h-0 opacity-0 mt-4 group-hover:h-[60px] group-hover:opacity-100 flex justify-center items-center cursor-pointer w-full mx-auto exploreTheService bg-white text-semiPrimary max-w-[288px] rounded-[33px] text-[27px] z-30">
                             <span>Explore the Service</span>
                         </button>
                     </div>
                 </div>
+                
                 <div class="w-full mx-auto communityConversationContainer transition-all cursor-pointer BottomAnimation mt-8">
-                    <div
-                        class="overflow-hidden relative group mx-auto w-full communityConversation bg-white flex flex-col justify-center items-center px-2 h-[334px] rounded-[33px]">
-                        <p
-                            class="group-hover:text-white text-2xl font-proxima font-proxima font-bold text-center text-primary z-30 relative transition ease-in-out duration-300">
+                    <div class="overflow-hidden relative group mx-auto w-full communityConversation bg-white flex flex-col justify-center items-center px-2 h-[334px] rounded-[33px]">
+                        <p class="group-hover:text-white text-2xl font-proxima font-proxima font-bold text-center text-primary z-30 relative transition ease-in-out duration-300">
                             Exployee input for recruitment & retention
                         </p>
-                        <button
-                            class="h-0 opacity-0 mt-4 group-hover:h-[60px] group-hover:opacity-100 flex justify-center items-center cursor-pointer w-full mx-auto exploreTheService bg-white text-semiPrimary max-w-[288px] rounded-[33px] text-[27px] z-30 z-30">
+                        <button class="h-0 opacity-0 mt-4 group-hover:h-[60px] group-hover:opacity-100 flex justify-center items-center cursor-pointer w-full mx-auto exploreTheService bg-white text-semiPrimary max-w-[288px] rounded-[33px] text-[27px] z-30 z-30">
                             <span>Explore the Service</span>
                         </button>
                     </div>
                 </div>
+                
                 <div class="w-full mx-auto communityConversationContainer transition-all cursor-pointer BottomAnimation mt-8">
-                    <div
-                        class="overflow-hidden relative group mx-auto w-full communityConversation bg-white flex flex-col justify-center items-center px-2 h-[334px] rounded-[33px]">
-                        <p
-                            class="group-hover:text-white text-2xl font-proxima font-proxima font-bold text-center text-primary z-30 relative transition ease-in-out duration-300">
-                            Retreats
-                        </p>
-                        <button
-                            class="h-0 opacity-0 mt-4 group-hover:h-[60px] group-hover:opacity-100 flex justify-center items-center cursor-pointer w-full mx-auto exploreTheService bg-white text-semiPrimary max-w-[288px] rounded-[33px] text-[27px] z-30 z-30">
+                    <div class="overflow-hidden relative group mx-auto w-full communityConversation bg-white flex flex-col justify-center items-center px-2 h-[334px] rounded-[33px]">
+                        <p class="group-hover:text-white text-2xl font-proxima font-proxima font-bold text-center text-primary z-30 relative transition ease-in-out duration-300">Retreats</p>
+                        <button class="h-0 opacity-0 mt-4 group-hover:h-[60px] group-hover:opacity-100 flex justify-center items-center cursor-pointer w-full mx-auto exploreTheService bg-white text-semiPrimary max-w-[288px] rounded-[33px] text-[27px] z-30 z-30">
                             <span>Explore the Service</span>
                         </button>
                     </div>
                 </div>
+
                 <div class="w-full mx-auto communityConversationContainer transition-all cursor-pointer BottomAnimation mt-8">
-                    <div
-                        class="overflow-hidden relative group mx-auto w-full communityConversation bg-white flex flex-col justify-center items-center px-2 h-[334px] rounded-[33px]">
-                        <p
-                            class="group-hover:text-white text-2xl font-proxima font-proxima font-bold text-center text-primary z-30 relative transition ease-in-out duration-300">
+                    <div class="overflow-hidden relative group mx-auto w-full communityConversation bg-white flex flex-col justify-center items-center px-2 h-[334px] rounded-[33px]">
+                        <p class="group-hover:text-white text-2xl font-proxima font-proxima font-bold text-center text-primary z-30 relative transition ease-in-out duration-300">
                             Community & Organiztion Change & Strategic Planning
                         </p>
-                        <button
-                            class="h-0 opacity-0 mt-4 group-hover:h-[60px] group-hover:opacity-100 flex justify-center items-center cursor-pointer w-full mx-auto exploreTheService bg-white text-semiPrimary max-w-[288px] rounded-[33px] text-[27px] z-30 z-30">
+                        <button class="h-0 opacity-0 mt-4 group-hover:h-[60px] group-hover:opacity-100 flex justify-center items-center cursor-pointer w-full mx-auto exploreTheService bg-white text-semiPrimary max-w-[288px] rounded-[33px] text-[27px] z-30 z-30">
                             <span>Explore the Service</span>
                         </button>
                     </div>
                 </div>
+                
                 <div class="w-full mx-auto communityConversationContainer transition-all cursor-pointer BottomAnimation mt-8">
-                    <div
-                        class="overflow-hidden relative group mx-auto w-full communityConversation bg-white flex flex-col justify-center items-center px-2 h-[334px] rounded-[33px]">
-                        <p
-                            class="group-hover:text-white text-2xl font-proxima font-proxima font-bold text-center text-primary z-30 relative transition ease-in-out duration-300">
+                    <div class="overflow-hidden relative group mx-auto w-full communityConversation bg-white flex flex-col justify-center items-center px-2 h-[334px] rounded-[33px]">
+                        <p class="group-hover:text-white text-2xl font-proxima font-proxima font-bold text-center text-primary z-30 relative transition ease-in-out duration-300">
                             Upgrading community culture from top-down governance to emergence
                         </p>
-                        <button
-                            class="h-0 opacity-0 mt-4 group-hover:h-[60px] group-hover:opacity-100 flex justify-center items-center cursor-pointer w-full mx-auto exploreTheService bg-white text-semiPrimary max-w-[288px] rounded-[33px] text-[27px] z-30 z-30 font-proximaNovaMedium">
+                        <button class="h-0 opacity-0 mt-4 group-hover:h-[60px] group-hover:opacity-100 flex justify-center items-center cursor-pointer w-full mx-auto exploreTheService bg-white text-semiPrimary max-w-[288px] rounded-[33px] text-[27px] z-30 z-30 font-proximaNovaMedium">
                             <span>Explore the Service</span>
                         </button>
                     </div>
@@ -269,9 +213,7 @@
 
     <!-- Trusted Organization Section Starts -->
     <div class="mt-10 mb-12 text-center lg:px-0 px-2">
-        <h1
-            class="lg:text-themeFortyTwoSize sm:text-2xl text-xl font-bold text-black mx-auto leading-tight">
-            Trusted as a strategic partner by the following organizations:</h1>
+        <h1 class="lg:text-themeFortyTwoSize sm:text-2xl text-xl font-bold text-black mx-auto leading-tight">Trusted as a strategic partner by the following organizations:</h1>
     </div>
 
     <div class="compniessLogo max-w-7xl	m-auto">
@@ -279,11 +221,10 @@
             <img class="mx-auto" src="images/partneerLogo2.png" alt="partner" />
         </div>
         <div class="w-[5.75rem]">
-            <img class="mx-auto" height="5.75rem" width="5.75rem" src="images/partneerLogo4.png"
-                alt="partneerLogo4" />
+            <img class="mx-auto" height="5.75rem" width="5.75rem" src="images/partneerLogo4.png" alt="partneerLogo4" />
         </div>
         <div>
-            <img class="mx-auto" src="images/partneerLogo2.png" alt="">
+            <img class="mx-auto" src="images/partneerLogo2.png" alt="partneerLogo2" />
         </div>
         <div class="relative lg:top-6 top-2">
             <img class="mx-auto" src="images/partnerLogo1.png" alt="partner Logo 1" />
@@ -292,8 +233,7 @@
             <img class="mx-auto" src="images/partneerLogo3.png" alt="partner Logo 3" />
         </div>
         <div class="w-[5.75rem]">
-            <img class="mx-auto" height="5.75rem" width="5.75rem" src="images/partneerLogo4.png"
-                alt="partner Logo 4" />
+            <img class="mx-auto" height="5.75rem" width="5.75rem" src="images/partneerLogo4.png" alt="partner Logo 4" />
         </div>
         <div>
             <img class="mx-auto" src="images/partneerLogo2.png" alt="partner Logo 2" />
@@ -305,8 +245,7 @@
             <img class="mx-auto" src="images/partneerLogo3.png" alt="partner Logo 3" />
         </div>
         <div class="w-[5.75rem]">
-            <img class="mx-auto" height="5.75rem" width="5.75rem" src="images/partneerLogo4.png"
-                alt="partner Logo 2" />
+            <img class="mx-auto" height="5.75rem" width="5.75rem" src="images/partneerLogo4.png" alt="partner Logo 2" />
         </div>
         <div>
             <img class="mx-auto" src="images/partneerLogo2.png" alt="partner Logo 2" />
@@ -320,53 +259,35 @@
 
     <!-- Starting Process Starts -->
     <div class="bg-communityConversationBg lg:h-[36.6875rem] h-auto lg:mt-24 sm:mt-12 mt-6 relative">
-        <div
-            class="max-w-[72.5rem] sm:px-5 px-3 sm:py-12 py-7 w-full mx-auto lg:flex block lg:overflow-visible overflow-hidden">
-            <div
-                class="text-white w-[28.75rem]  lg:-mt-24 mt-0 sm:px-10 px-5 cardBg rounded-[1.625rem] lg:h-[43.4375rem] h-auto RightAnimation lg:mx-0 mx-auto lg:py-0 py-10 mobile_setting">
-                <h4 class="sm:text-4xl text-2xl lg:mt-[5.875rem] mt-0 font-GilroyBold">Starting the process is
-                    simple
-                </h4>
-                <p class="mt-4 text-lg font-bold">Book a consultation today with Sarah,
-                    a
-                    seasoned straight shooter, and find how to identify your organization’s potential next steps in
-                    as
-                    little as one phone call.</p>
+        <div class="max-w-[72.5rem] sm:px-5 px-3 sm:py-12 py-7 w-full mx-auto lg:flex block lg:overflow-visible overflow-hidden">
+            <div class="text-white w-[28.75rem]  lg:-mt-24 mt-0 sm:px-10 px-5 cardBg rounded-[1.625rem] lg:h-[43.4375rem] h-auto RightAnimation lg:mx-0 mx-auto lg:py-0 py-10 mobile_setting">
+                <h4 class="sm:text-4xl text-2xl lg:mt-[5.875rem] mt-0 font-GilroyBold">Starting the process is simple</h4>
+                <p class="mt-4 text-lg font-bold">Book a consultation today with Sarah, a seasoned straight shooter, and find how to identify your organization’s potential next steps in as little as one phone call.</p>
                 <button type="button" class="bg-yellow font-bold text-primary text-2xl bookYourCall sm:mt-12 mt-6 ease-in duration-300 hover:opacity-90">
                     <span >Book Your Call</span>
                 </button>
             </div>
 
             <div class="max-w-2xl lg:ml-12 lg:mt-0 mt-8 LeftAnimation lg:mx-0 mx-auto ">
-                <h4
-                    class="md:text-4xl sm:text-2xl text-xl leading-12 font-bold text-primary font-GilroyMedium leading-snug lg:text-left text-center">
-                    Key Ring Consulting is trusted by business, government and social enterprise leaders:</h4>
+                <h4 class="md:text-4xl sm:text-2xl text-xl leading-12 font-bold text-primary font-GilroyMedium leading-snug lg:text-left text-center">Key Ring Consulting is trusted by business, government and social enterprise leaders:</h4>
 
                 <div class="ReviewSlider bg-white mt-6 rounded-[1.75rem]">
                     <div class="ReviewSliderContainer w-full">
-                        <div
-                            class="sm:ml-16 ml-8 sm:text-xl text-lg pl-2 mt-8 w-full text-primary max-w-fourSeventyThree mobile-width">
-                            <p class="leading-relaxed">“With Sarah creating retreats and adaptive roadmaps, I have a
-                                pathway to
-                                tangible results that involves the right people at the right time at the right
-                                level.
-                                Now, everybody
-                                is buying in and ready to invest themselves fully into our future.”</p>
+                        <div class="sm:ml-16 ml-8 sm:text-xl text-lg pl-2 mt-8 w-full text-primary max-w-fourSeventyThree mobile-width">
+                            <p class="leading-relaxed">“With Sarah creating retreats and adaptive roadmaps, I have a pathway to tangible results that involves the right people at the right time at the right level. Now, everybody is buying in and ready to invest themselves fully into our future.”</p>
                             <p class="font-proximaNovaBold sm:mt-8 mt-0 sm:pl-0 pl-2">Lara Hermanson</p>
                             <p class="sm:mt-3 mt-0 pb-10 sm:pl-0 pl-2"> Partner, Farmscape</p>
                         </div>
                     </div>
                     <div class="ReviewSliderContainer pb-8">
-                        <div
-                            class="sm:ml-16 ml-8 sm:text-xl pl-2 text-lg mt-8 w-full text-primary max-w-fourSeventyThree mobile-width">
+                        <div class="sm:ml-16 ml-8 sm:text-xl pl-2 text-lg mt-8 w-full text-primary max-w-fourSeventyThree mobile-width">
                             <p class="leading-relaxed">“I’ve been a participant in Sarah’s work “live” and online, and she is one of the best facilitators I’ve ever seen. She is especially rigorous about leading inclusive, equitable spaces that actualize the voices of everyone in the room.”</p>
                             <p class="font-proximaNovaBold mt-8">Julie Hankes</p>
                             <p class="mt-3 pb-10"> Leadership Coach & Facilitator</p>
                         </div>
                     </div>
                     <div class="ReviewSliderContainer pb-8">
-                        <div
-                            class="sm:ml-16 ml-8 pl-2 sm:text-xl text-lg mt-8 w-full text-primary max-w-fourSeventyThree mobile-width">
+                        <div class="sm:ml-16 ml-8 pl-2 sm:text-xl text-lg mt-8 w-full text-primary max-w-fourSeventyThree mobile-width">
                             <p class="leading-relaxed">“Sarah’s facilitation style allows our conversations to flow freely, while providing structure and guidance to create actionable goals to improve the way we function as a team. Her empathetic and responsive facilitation style helped to create a safe space for the whole team to engage.”</p>
                             <p class="font-proximaNovaBold mt-8">Joanna French</p>
                             <p class="mt-3 pb-10">Research & Policy</p>
@@ -383,26 +304,20 @@
     <div class="w-full bg-primary pt-[1.9406rem] pb-8 lg:mt-48 mt-8">
         <div class="w-full max-w-[64.5rem] mx-auto text-center text-white opacity-100">
             <h2 class="sm:text-4xl text-3xl font-bold sm:h-20 h-12">FREE Resources</h2>
-            <p
-                class="w-full BottomAnimation max-w-[68.3125rem] sm:text-3xl text-2xl text-white font-proximaNova sm:leading-snug leading-tight px-3">
+            <p class="w-full BottomAnimation max-w-[68.3125rem] sm:text-3xl text-2xl text-white font-proximaNova sm:leading-snug leading-tight px-3">
                 Sign up for your newsletter to unlock our helpful virtual meeting leadership tips.
             </p>
         </div>
         <div class="w-full max-w-7xl sm:px-6 px-4 mx-auto sm:mt-[1.98rem] mt-[1.5rem]">
-            <form
-                class="flex flex-wrap justify-center w-full gap-y-4 mx-auto responsiveForm"
-                action="javascript:void(0)" method="POST">
+            <form class="flex flex-wrap justify-center w-full gap-y-4 mx-auto responsiveForm" action="javascript:void(0)" method="POST">
                 <div class="md:w-1/2 sm:w-10/12 w-full h-[65px] md:px-4 mt-2">
-                    <input type="Name" id="Name" placeholder="Name"
-                        class="placeholder:text-black w-full h-full sm:text-3xl text-2xl w-full h-full bg-white pl-5 font-proximaNovaBold" />
+                    <input type="Name" id="Name" placeholder="Name" class="placeholder:text-black w-full h-full sm:text-3xl text-2xl bg-white pl-5 font-proximaNovaBold" />
                 </div>
                 <div class="md:w-1/2 sm:w-10/12 w-full h-[65px] md:px-4 mt-2">
-                    <input type="email" id="email" placeholder="Email"
-                        class="sm:text-3xl text-2xl placeholder:text-black w-full h-full bg-white pl-5 font-proximaNovaBold" />
+                    <input type="email" id="email" placeholder="Email" class="sm:text-3xl text-2xl placeholder:text-black w-full h-full bg-white pl-5 font-proximaNovaBold" />
                 </div>
 
-                <button type="submit"
-                    class="mt-2 md:w-1/2 sm:w-10/12 w-full h-[65px] rounded-[40px] cursor-pointer bg-white tracking-[2.35px] text-center uppercase sm:text-3xl text-2xl text-primary font-proximaNovaBold">
+                <button type="submit" class="mt-2 md:w-1/2 sm:w-10/12 w-full h-[65px] rounded-[40px] cursor-pointer bg-white tracking-[2.35px] text-center uppercase sm:text-3xl text-2xl text-primary font-proximaNovaBold">
                     <span class="h-full w-full flex justify-center items-center">SUBSCRIBE</span>
                 </button>
             </form>
@@ -451,17 +366,13 @@
 
             <div class="max-w-sm w-full flex">
                 <a class="flex h-fit cursor-pointer" href="index.html">
-                    <img src="images/footerLogoIcon.svg" alt="key ring Consulting"
-                        class="footerLogoRotate sm:w-[130px] w-16 sm:h-[110px] h-auto" />
-                    <img src="images/footerLogoText-svg(1).svg" alt="key ring Consulting"
-                        class="sm:w-[130px] w-28 sm:h-[110px] h-auto" />
+                    <img src="images/footerLogoIcon.svg" alt="key ring Consulting" class="footerLogoRotate sm:w-[130px] w-16 sm:h-[110px] h-auto" />
+                    <img src="images/footerLogoText-svg(1).svg" alt="key ring Consulting" class="sm:w-[130px] w-28 sm:h-[110px] h-auto" />
                 </a>
             </div>
         </div>
         <div class="w-full text-center mx-auto px-3 mt-7">
-            <p class="text-xl BottomAnimation text-center text-white tracking-[0.47px]">
-                All content copyright © 2024 Key Ring Consulting. All rights reserved.
-            </p>
+            <p class="text-xl BottomAnimation text-center text-white tracking-[0.47px]">All content copyright © 2024 Key Ring Consulting. All rights reserved.</p>
         </div>
     </footer>
     <!-- Footer Section Ends -->
